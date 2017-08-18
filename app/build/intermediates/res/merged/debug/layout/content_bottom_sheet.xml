@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:id="@+id/bottomSheetLayout"
+    >
+
+    <Button
+        android:id="@+id/BTN_hide"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="@color/lightBllue"
+        android:text="@string/hideServices"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:onClick="hideBottomSheet"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/lightGray">
+
+    </View>
+
+    <Button
+        android:id="@+id/BTN_offer_insurance"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/insurance_offer"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/installment_offer"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:id="@+id/BTN_InstallmentOffer"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/shading_offer"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:id="@+id/BTN_shading"/>
+
+</LinearLayout>

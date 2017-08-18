@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Sa3rha</string>
+    <string name="searchForCar">Search for Car </string>
+    <string name="newCar">New Cars</string>
+    <string name="oldCar">Used Cars</string>
+    <string name="allMark">All</string>
+    <string name="EnglishLanguage">English</string>
+    <string name="ArabicLanguage">عربى</string>
+    <string name="officialAgent">official Agent</string>
+    <string name="enterChoiceCar">Please choice the car you want</string>
+    <string name="AddToBin">Add To Bin</string>
+    <string name="price">Price :</string>
+
+    <string name="insurance_offer">Insurance Offer</string>
+    <string name="installment_offer">Installment Offer</string>
+    <string name="shading_offer">Shading Offer</string>
+    <string name="sendOrderToInsuranceOffer">Send order to insurance offer</string>
+    <string name="sendOrderToInstallmentOffer">Send order to installment offer</string>
+    <string name="sendOrderToShadingOffer">Send order to shading offer</string>
+
+    <string name="AddToCombare">Added for comparison</string>
+    <string name="goOn"> Continue</string>
+    <string name="Condition">Condition :</string>
+    <string name="CarOwnerData">Car owner data</string>
+    <string name="MakeOrdernow">Make order now</string>
+    <string name="ShowResult">Show Result</string>
+
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_category">CategoryActivity</string>
+
+    <string name="add_car">Add a used car</string>
+    <string name="name">The name is quadrant</string>
+    <string name="email">Email Address</string>
+    <string name="number">Mobile number</string>
+    <string name="type_car">Type of car</string>
+    <string name="year_model">Year Model</string>
+    <string name="used_price">price</string>
+    <string name="notes">Notes</string>
+    <string name="model">Model</string>
+    <string name="number_photo">Add up to 4 photos</string>
+    <string name="new_car">Add the car</string>
+    <string name="allBrands">All Brands</string>
+    <string name="skip">Skip the Video</string>
+    <string name="ShowServices">Show Services</string>
+    <string name="hideServices">Hide Services</string>
+
+
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">سعرها</string>
+    <string name="ArabicLanguage">عربى</string>
+    <string name="EnglishLanguage">English</string>
+    <string name="allMark">كل</string>
+    <string name="newCar">السيارات الجديدة</string>
+    <string name="oldCar">السيارات المستعملة</string>
+    <string name="searchForCar">ابحث عن سيارة</string>
+    <string name="officialAgent">الوكيل الرسمى</string>
+    <string name="enterChoiceCar">من فضللك اختر السيارة التى تريدها</string>
+    <string name="AddToBin">اضافة للسلة</string>
+    <string name="price">السعر :</string>
+    <string name="insurance_offer">عرض التآمين</string>
+    <string name="installment_offer">عرض التقسيط</string>
+    <string name="shading_offer">عرض التظليل</string>
+    <string name="sendOrderToInsuranceOffer">ارسال طلب لعرض التامين</string>
+    <string name="sendOrderToInstallmentOffer">ارسال طلب لعرض التقسيط</string>
+    <string name="sendOrderToShadingOffer">ارسال طلب لعرض التظليل</string>
+    <string name="AddToCombare">تمت الاضافة للمقارنة</string>
+    <string name="goOn">متابعة</string>
+    <string name="Condition">الحالة : </string>
+    <string name="CarOwnerData">بيانات مالك السيارة</string>
+    <string name="MakeOrdernow">تقدم بطلب الان</string>
+    <string name="ShowResult">عرض النتايج</string>
+    <string name="ShowServices">عرض الخدمات</string>
+
+
+
+    <string name="add_car">اضافه سياره مستعمله</string>
+    <string name="email">"البريد الاكتروني "</string>
+    <string name="model">الموديل</string>
+    <string name="name">"الاسم رباعي "</string>
+    <string name="new_car">اضافه سياره</string>
+    <string name="notes">ملاحظات</string>
+    <string name="number">رقم الجوال</string>
+    <string name="number_photo">اضف بحد اقصي اربع صور</string>
+    <string name="used_price">السعر</string>
+    <string name="type_car">نوع السياره</string>
+    <string name="year_model">سنه الموديل</string>
+    <string name="allBrands">جميع المركات</string>
+    <string name="skip">تخطى الفديو</string>
+    <string name="hideServices">اخفاء الخدمات</string>
+</resources>
