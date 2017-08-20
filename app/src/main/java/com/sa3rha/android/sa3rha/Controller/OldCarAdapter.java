@@ -14,59 +14,74 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
+import com.sa3rha.android.sa3rha.Models.UsedCar;
 import com.sa3rha.android.sa3rha.Ui.Activities.OldCarDetailsActivity;
 import com.sa3rha.android.sa3rha.R;
+import com.sa3rha.android.sa3rha.Utilities.Constants;
+import com.squareup.picasso.Picasso;
+
+import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class OldCarAdapter extends RecyclerView.Adapter<OldCarAdapter.OldCarViewHolder>{
+public class OldCarAdapter extends RecyclerView.Adapter<OldCarAdapter.OldCarViewHolder> {
 
     Context context;
     LayoutInflater layoutInflater;
+    ArrayList<UsedCar> usedCarArrayList;
 
-    public OldCarAdapter(Context context) {
+    public OldCarAdapter(Context context, ArrayList<UsedCar> usedCarArrayList) {
+        this.usedCarArrayList = usedCarArrayList;
         this.context = context;
-        layoutInflater= (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
     @Override
     public OldCarViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v=layoutInflater.inflate(R.layout.iteam_old_car,parent,false);
+        View v = layoutInflater.inflate(R.layout.iteam_old_car, parent, false);
         return new OldCarViewHolder(v);
     }
 
     @Override
     public void onBindViewHolder(OldCarViewHolder holder, final int position) {
+        holder.TV_carName.setText(usedCarArrayList.get(position).getCarName());
+        holder.TV_carPrice.setText(usedCarArrayList.get(position).getCarPrice());
+        Picasso.with(context).
+                load(Constants.MEDIA_LINK + Constants.CarsImages+ usedCarArrayList.get(position).getCarImage()).into(holder.iv_CarIamge);
     }
 
     @Override
     public int getItemCount() {
-        return 20;
+        return usedCarArrayList.size();
     }
 
     public class OldCarViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+        TextView TV_carName = (TextView) itemView.findViewById(R.id.TV_carName);
+        TextView TV_carPrice = (TextView) itemView.findViewById(R.id.TV_carPrice);
         @BindView(R.id.IV_carImage)
         ImageView iv_CarIamge;
         @BindView(R.id.IV_addToCompare)
         ImageView iv_addToCompare;
         Dialog dialog;
+
         public OldCarViewHolder(View itemView) {
             super(itemView);
-            ButterKnife.bind(this,itemView);
+            ButterKnife.bind(this, itemView);
             iv_CarIamge.setOnClickListener(this);
             iv_addToCompare.setOnClickListener(this);
         }
 
         @Override
         public void onClick(View v) {
-            int id=v.getId();
+            int id = v.getId();
             Activity activity = (Activity) context;
-            if(id==R.id.IV_carImage){
-                activity.startActivity(new Intent(context,OldCarDetailsActivity.class));
+            if (id == R.id.IV_carImage) {
+                activity.startActivity(new Intent(context, OldCarDetailsActivity.class));
                 activity.overridePendingTransition(R.anim.enter_from_left, R.anim.exit_out_right);
-            }else if(id==R.id.IV_addToCompare){
+            } else if (id == R.id.IV_addToCompare) {
                 addtoCompare();
             }
         }

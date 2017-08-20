@@ -1079,7 +1079,7 @@ int layout dialog_add_to_combare 0x7f040034
 int layout dialog_make_offer_activity 0x7f040035
 int layout fragment_new_brands 0x7f040036
 int layout fragment_old_car 0x7f040037
-int layout iteam_new_car 0x7f040038
+int layout iteam_new_brand 0x7f040038
 int layout iteam_offer_activity 0x7f040039
 int layout iteam_old_car 0x7f04003a
 int layout iteam_serach 0x7f04003b

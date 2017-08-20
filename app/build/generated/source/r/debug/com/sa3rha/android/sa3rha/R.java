@@ -3597,7 +3597,7 @@ containing a value of this type.
         public static final int dialog_make_offer_activity=0x7f040035;
         public static final int fragment_new_brands=0x7f040036;
         public static final int fragment_old_car=0x7f040037;
-        public static final int iteam_new_brand =0x7f040038;
+        public static final int iteam_new_brand=0x7f040038;
         public static final int iteam_offer_activity=0x7f040039;
         public static final int iteam_old_car=0x7f04003a;
         public static final int iteam_serach=0x7f04003b;

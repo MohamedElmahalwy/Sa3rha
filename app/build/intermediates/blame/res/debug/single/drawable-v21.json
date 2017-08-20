@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\cz\\AndroidStudioProjects\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\notification_action_background.xml",
+        "source": "C:\\Users\\cz\\.android\\build-cache\\ec6210953d4263697a7b637d380fccb3b349332e\\output\\res\\drawable-v21\\notification_action_background.xml"
+    },
+    {
         "merged": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\notification_action_background.xml",
         "source": "C:\\Users\\Mohamed Hefny\\.android\\build-cache\\75a1e15d27a353e47dfc037eac094dbb2d218fba\\output\\res\\drawable-v21\\notification_action_background.xml"
     },
@@ -12,8 +16,20 @@
         "source": "C:\\Users\\Mohamed Hefny\\.android\\build-cache\\75a1e15d27a353e47dfc037eac094dbb2d218fba\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
     },
     {
+        "merged": "C:\\Users\\cz\\AndroidStudioProjects\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_bottom_navigation_item_background.xml",
+        "source": "C:\\Users\\cz\\.android\\build-cache\\39d13b040d721e5e3bec4ec6f98314e02c8e453e\\output\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\cz\\AndroidStudioProjects\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\cz\\.android\\build-cache\\ec6210953d4263697a7b637d380fccb3b349332e\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
+    },
+    {
         "merged": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_hide_password.xml",
         "source": "C:\\Users\\Mohamed Hefny\\.android\\build-cache\\7d30236e34d7870fe112b59064de27cd4d340770\\output\\res\\drawable-v21\\avd_hide_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\cz\\AndroidStudioProjects\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "C:\\Users\\cz\\.android\\build-cache\\ec6210953d4263697a7b637d380fccb3b349332e\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
     },
     {
         "merged": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_show_password.xml",
@@ -22,6 +38,22 @@
     {
         "merged": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_bottom_navigation_item_background.xml",
         "source": "C:\\Users\\Mohamed Hefny\\.android\\build-cache\\7d30236e34d7870fe112b59064de27cd4d340770\\output\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\cz\\AndroidStudioProjects\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\cz\\.android\\build-cache\\ec6210953d4263697a7b637d380fccb3b349332e\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\cz\\AndroidStudioProjects\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_password_eye.xml",
+        "source": "C:\\Users\\cz\\.android\\build-cache\\39d13b040d721e5e3bec4ec6f98314e02c8e453e\\output\\res\\drawable-v21\\design_password_eye.xml"
+    },
+    {
+        "merged": "C:\\Users\\cz\\AndroidStudioProjects\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_show_password.xml",
+        "source": "C:\\Users\\cz\\.android\\build-cache\\39d13b040d721e5e3bec4ec6f98314e02c8e453e\\output\\res\\drawable-v21\\avd_show_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\cz\\AndroidStudioProjects\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_hide_password.xml",
+        "source": "C:\\Users\\cz\\.android\\build-cache\\39d13b040d721e5e3bec4ec6f98314e02c8e453e\\output\\res\\drawable-v21\\avd_hide_password.xml"
     },
     {
         "merged": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_password_eye.xml",
