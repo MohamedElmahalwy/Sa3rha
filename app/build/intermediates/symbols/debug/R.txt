@@ -807,9 +807,9 @@ int id IV_CarImages 0x7f0d009e
 int id IV_addToCompare 0x7f0d008a
 int id IV_agentLogo 0x7f0d00be
 int id IV_backHome 0x7f0d007d
+int id IV_brandLogo 0x7f0d00bc
 int id IV_car 0x7f0d00c5
 int id IV_carImage 0x7f0d00c1
-int id IV_carMark 0x7f0d00bc
 int id IV_clear 0x7f0d0090
 int id IV_officialAgent 0x7f0d007e
 int id IV_playVideo 0x7f0d009b
@@ -825,8 +825,8 @@ int id RV_allBrands 0x7f0d0092
 int id RV_newCars 0x7f0d00b7
 int id RV_offer 0x7f0d0087
 int id RV_oldCars 0x7f0d00b9
-int id TV_CarName 0x7f0d00bd
 int id TV_agentName 0x7f0d00c0
+int id TV_brandLogo 0x7f0d00bd
 int id TV_carCondition 0x7f0d00c2
 int id TV_carName 0x7f0d00b3
 int id TV_carPrice 0x7f0d00c3
@@ -1077,7 +1077,7 @@ int layout design_navigation_menu_item 0x7f040032
 int layout design_text_input_password_icon 0x7f040033
 int layout dialog_add_to_combare 0x7f040034
 int layout dialog_make_offer_activity 0x7f040035
-int layout fragment_new_car 0x7f040036
+int layout fragment_new_brands 0x7f040036
 int layout fragment_old_car 0x7f040037
 int layout iteam_new_car 0x7f040038
 int layout iteam_offer_activity 0x7f040039

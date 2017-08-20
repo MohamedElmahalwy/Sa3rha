@@ -1,11 +1,11 @@
 [
     {
-        "merged": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
-        "source": "C:\\Users\\Mohamed Hefny\\.android\\build-cache\\75a1e15d27a353e47dfc037eac094dbb2d218fba\\output\\res\\drawable\\abc_btn_check_material.xml"
-    },
-    {
         "merged": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
         "source": "C:\\Users\\Mohamed Hefny\\.android\\build-cache\\75a1e15d27a353e47dfc037eac094dbb2d218fba\\output\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "C:\\Users\\Mohamed Hefny\\.android\\build-cache\\75a1e15d27a353e47dfc037eac094dbb2d218fba\\output\\res\\drawable\\abc_btn_check_material.xml"
     },
     {
         "merged": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",

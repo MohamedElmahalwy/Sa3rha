@@ -3321,9 +3321,9 @@ containing a value of this type.
         public static final int IV_addToCompare=0x7f0d008a;
         public static final int IV_agentLogo=0x7f0d00be;
         public static final int IV_backHome=0x7f0d007d;
+        public static final int IV_brandLogo=0x7f0d00bc;
         public static final int IV_car=0x7f0d00c5;
         public static final int IV_carImage=0x7f0d00c1;
-        public static final int IV_carMark=0x7f0d00bc;
         public static final int IV_clear=0x7f0d0090;
         public static final int IV_officialAgent=0x7f0d007e;
         public static final int IV_playVideo=0x7f0d009b;
@@ -3339,8 +3339,8 @@ containing a value of this type.
         public static final int RV_newCars=0x7f0d00b7;
         public static final int RV_offer=0x7f0d0087;
         public static final int RV_oldCars=0x7f0d00b9;
-        public static final int TV_CarName=0x7f0d00bd;
         public static final int TV_agentName=0x7f0d00c0;
+        public static final int TV_brandLogo=0x7f0d00bd;
         public static final int TV_carCondition=0x7f0d00c2;
         public static final int TV_carName=0x7f0d00b3;
         public static final int TV_carPrice=0x7f0d00c3;
@@ -3595,7 +3595,7 @@ containing a value of this type.
         public static final int design_text_input_password_icon=0x7f040033;
         public static final int dialog_add_to_combare=0x7f040034;
         public static final int dialog_make_offer_activity=0x7f040035;
-        public static final int fragment_new_car=0x7f040036;
+        public static final int fragment_new_brands=0x7f040036;
         public static final int fragment_old_car=0x7f040037;
         public static final int iteam_new_car=0x7f040038;
         public static final int iteam_offer_activity=0x7f040039;

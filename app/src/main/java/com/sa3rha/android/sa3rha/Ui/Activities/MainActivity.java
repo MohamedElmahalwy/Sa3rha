@@ -3,9 +3,6 @@ package com.sa3rha.android.sa3rha.Ui.Activities;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.WindowManager;
 import android.widget.ImageView;
@@ -14,12 +11,9 @@ import android.widget.TextView;
 
 import com.sa3rha.android.sa3rha.Controller.MainPagerAdapter;
 import com.sa3rha.android.sa3rha.Ui.BaseActivity;
-import com.sa3rha.android.sa3rha.Ui.Fragments.NewCarsFragment;
+import com.sa3rha.android.sa3rha.Ui.Fragments.NewBrandsFragment;
 import com.sa3rha.android.sa3rha.Ui.Fragments.OldCarsFragment;
 import com.sa3rha.android.sa3rha.R;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -56,7 +50,7 @@ public class MainActivity extends BaseActivity {
     private void setupViewPager(ViewPager viewPager) {
         MainPagerAdapter adapter = new MainPagerAdapter(getSupportFragmentManager());
         adapter.addFrag(new OldCarsFragment(), getString(R.string.oldCar));
-        adapter.addFrag(new NewCarsFragment(), getString(R.string.newCar));
+        adapter.addFrag(new NewBrandsFragment(), getString(R.string.newCar));
         viewPager.setAdapter(adapter);
     }
 
