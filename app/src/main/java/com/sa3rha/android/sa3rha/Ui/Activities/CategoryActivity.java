@@ -26,8 +26,8 @@ public class CategoryActivity extends BaseActivity {
     @BindView(R.id.expandable)
     ExpandableListView expandableListView ;
     private ArrayList<String> expandableListTitle;
-    
-
+    int brand_Id;
+    String brand_Title;
 
 
     @Override
@@ -38,6 +38,8 @@ public class CategoryActivity extends BaseActivity {
         ButterKnife.bind(this);
         init();
         HashMap<String, List<String>> expandableListDetail = new HashMap<String, List<String>>();
+        brand_Id = getIntent().getIntExtra("brand_Id",0);
+        brand_Title = getIntent().getStringExtra("brand_Title");
 
         List<String> fgcroz = new ArrayList<String>();
         fgcroz.add("Brazil");

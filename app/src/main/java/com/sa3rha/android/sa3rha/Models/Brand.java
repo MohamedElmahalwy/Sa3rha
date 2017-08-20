@@ -8,9 +8,9 @@ public class Brand {
     int brandId;
     String brandTitele, brandLogo;
 
-    public Brand (int brandId, String brandTitele, String brandLogo){
+    public Brand (int brandId, String brandTitle, String brandLogo){
         this.brandId = brandId;
-        this.brandTitele = brandTitele;
+        this.brandTitele = brandTitle;
         this.brandLogo = brandLogo;
     }
 
@@ -18,7 +18,7 @@ public class Brand {
         return brandId;
     }
 
-    public String getBrandTitele() {
+    public String getBrandTitle() {
         return brandTitele;
     }
 

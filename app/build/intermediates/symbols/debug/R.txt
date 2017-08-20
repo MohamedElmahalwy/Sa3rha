@@ -817,7 +817,6 @@ int id IV_search 0x7f0d0081
 int id LL_dots 0x7f0d0089
 int id L_trans 0x7f0d00b2
 int id Linear_ContainerOfSearchBox 0x7f0d007c
-int id Linear_container_newCars 0x7f0d00bb
 int id Main_Activity_Fragment_container 0x7f0d0083
 int id RL_VideoContainer 0x7f0d009a
 int id RV_ShowResult 0x7f0d0095
@@ -864,6 +863,7 @@ int id basic 0x7f0d0016
 int id beginning 0x7f0d0040
 int id bottom 0x7f0d002f
 int id bottomSheetLayout 0x7f0d00a1
+int id brandItemContainer 0x7f0d00bb
 int id buttonPanel 0x7f0d0053
 int id calligraphy_tag_id 0x7f0d0004
 int id cancel_action 0x7f0d00ce

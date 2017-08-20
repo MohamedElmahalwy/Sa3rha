@@ -3331,7 +3331,6 @@ containing a value of this type.
         public static final int LL_dots=0x7f0d0089;
         public static final int L_trans=0x7f0d00b2;
         public static final int Linear_ContainerOfSearchBox=0x7f0d007c;
-        public static final int Linear_container_newCars=0x7f0d00bb;
         public static final int Main_Activity_Fragment_container=0x7f0d0083;
         public static final int RL_VideoContainer=0x7f0d009a;
         public static final int RV_ShowResult=0x7f0d0095;
@@ -3378,6 +3377,7 @@ containing a value of this type.
         public static final int beginning=0x7f0d0040;
         public static final int bottom=0x7f0d002f;
         public static final int bottomSheetLayout=0x7f0d00a1;
+        public static final int brandItemContainer=0x7f0d00bb;
         public static final int buttonPanel=0x7f0d0053;
         public static final int calligraphy_tag_id=0x7f0d0004;
         public static final int cancel_action=0x7f0d00ce;
@@ -3597,7 +3597,7 @@ containing a value of this type.
         public static final int dialog_make_offer_activity=0x7f040035;
         public static final int fragment_new_brands=0x7f040036;
         public static final int fragment_old_car=0x7f040037;
-        public static final int iteam_new_car=0x7f040038;
+        public static final int iteam_new_brand =0x7f040038;
         public static final int iteam_offer_activity=0x7f040039;
         public static final int iteam_old_car=0x7f04003a;
         public static final int iteam_serach=0x7f04003b;

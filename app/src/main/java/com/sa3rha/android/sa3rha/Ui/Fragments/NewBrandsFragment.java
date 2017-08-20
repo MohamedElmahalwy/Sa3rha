@@ -76,8 +76,11 @@ public class NewBrandsFragment extends Fragment implements NewBrandsAdapter.Bran
     }
 
     @Override
-    public void onBrandSelected(int position) {
-        startActivity(new Intent(getActivity(), CategoryActivity.class));
+    public void onBrandSelected(int brand_Id, String brandTitle) {
+        Intent intent = new Intent(getActivity(), CategoryActivity.class);
+        intent.putExtra("brand_Id", brand_Id);
+        intent.putExtra("brand_Title", brandTitle);
+        startActivity(intent);
         getActivity().overridePendingTransition(R.anim.enter_from_left, R.anim.exit_out_right);
     }
 
@@ -141,7 +144,7 @@ public class NewBrandsFragment extends Fragment implements NewBrandsAdapter.Bran
                             for (int i = 0; i < response.length(); i++) {
                                 JSONObject brandObject = response.getJSONObject(i);
                                 Brand brand = new Brand
-                                                (brandObject.getInt("brandId"),
+                                        (brandObject.getInt("brandId"),
                                                 brandObject.getString("brandTitle"),
                                                 brandObject.getString("brandLogo"));
                                 brands.add(brand);
