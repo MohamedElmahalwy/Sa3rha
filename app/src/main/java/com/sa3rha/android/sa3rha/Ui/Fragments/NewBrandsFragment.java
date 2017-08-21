@@ -42,10 +42,6 @@ public class NewBrandsFragment extends Fragment implements NewBrandsAdapter.Bran
     ArrayList<Brand> brands;
     int screen_width_in_pixel;
 
-    public NewBrandsFragment() {
-        // Required empty public constructor
-    }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_new_brands, container, false);

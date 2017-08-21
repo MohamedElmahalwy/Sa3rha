@@ -13,14 +13,11 @@ public class UsedCar extends Car {
         this.carName = carName;
         this.carPrice=carPrice;
         this.carImage=carImage;
-
-
     }
 
     public String getCarName() {
         return carName;
     }
-
     public String getCarPrice() {
         return carPrice;
     }
