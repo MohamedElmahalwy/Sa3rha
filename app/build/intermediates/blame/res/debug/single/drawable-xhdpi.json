@@ -1,35 +1,27 @@
 [
     {
-        "merged": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_search_black_24dp.png",
-        "source": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\src\\main\\res\\drawable-xhdpi\\ic_search_black_24dp.png"
+        "merged": "E:\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\done.png",
+        "source": "E:\\Sa3rha\\app\\src\\main\\res\\drawable-xhdpi\\done.png"
     },
     {
-        "merged": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_arrow_forward_white_24dp.png",
-        "source": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\src\\main\\res\\drawable-xhdpi\\ic_arrow_forward_white_24dp.png"
-    },
-    {
-        "merged": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_add_white_24dp.png",
-        "source": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\src\\main\\res\\drawable-xhdpi\\ic_add_white_24dp.png"
+        "merged": "E:\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_arrow_back_white_24dp.png",
+        "source": "E:\\Sa3rha\\app\\src\\main\\res\\drawable-xhdpi\\ic_arrow_back_white_24dp.png"
     },
     {
         "merged": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_note_add_white_48dp.png",
         "source": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\src\\main\\res\\drawable-xhdpi\\ic_note_add_white_48dp.png"
     },
     {
-        "merged": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\done.png",
-        "source": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\src\\main\\res\\drawable-xhdpi\\done.png"
+        "merged": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_add_white_24dp.png",
+        "source": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\src\\main\\res\\drawable-xhdpi\\ic_add_white_24dp.png"
     },
     {
-        "merged": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\add_compare.png",
-        "source": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\src\\main\\res\\drawable-xhdpi\\add_compare.png"
+        "merged": "E:\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\profile_picture.png",
+        "source": "E:\\Sa3rha\\app\\src\\main\\res\\drawable-xhdpi\\profile_picture.png"
     },
     {
-        "merged": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\call_answer.png",
-        "source": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\src\\main\\res\\drawable-xhdpi\\call_answer.png"
-    },
-    {
-        "merged": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_clear_black_24dp.png",
-        "source": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\src\\main\\res\\drawable-xhdpi\\ic_clear_black_24dp.png"
+        "merged": "E:\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\call_answer.png",
+        "source": "E:\\Sa3rha\\app\\src\\main\\res\\drawable-xhdpi\\call_answer.png"
     },
     {
         "merged": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_play_circle_filled_white_48dp.png",
@@ -40,7 +32,71 @@
         "source": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\src\\main\\res\\drawable-xhdpi\\ic_arrow_back_white_24dp.png"
     },
     {
+        "merged": "E:\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_add_white_24dp.png",
+        "source": "E:\\Sa3rha\\app\\src\\main\\res\\drawable-xhdpi\\ic_add_white_24dp.png"
+    },
+    {
+        "merged": "E:\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\combined_shape.png",
+        "source": "E:\\Sa3rha\\app\\src\\main\\res\\drawable-xhdpi\\combined_shape.png"
+    },
+    {
+        "merged": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_search_black_24dp.png",
+        "source": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\src\\main\\res\\drawable-xhdpi\\ic_search_black_24dp.png"
+    },
+    {
+        "merged": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_arrow_forward_white_24dp.png",
+        "source": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\src\\main\\res\\drawable-xhdpi\\ic_arrow_forward_white_24dp.png"
+    },
+    {
+        "merged": "E:\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_arrow_forward_white_24dp.png",
+        "source": "E:\\Sa3rha\\app\\src\\main\\res\\drawable-xhdpi\\ic_arrow_forward_white_24dp.png"
+    },
+    {
+        "merged": "E:\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_clear_black_24dp.png",
+        "source": "E:\\Sa3rha\\app\\src\\main\\res\\drawable-xhdpi\\ic_clear_black_24dp.png"
+    },
+    {
+        "merged": "E:\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\add_compare.png",
+        "source": "E:\\Sa3rha\\app\\src\\main\\res\\drawable-xhdpi\\add_compare.png"
+    },
+    {
+        "merged": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\done.png",
+        "source": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\src\\main\\res\\drawable-xhdpi\\done.png"
+    },
+    {
+        "merged": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\add_compare.png",
+        "source": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\src\\main\\res\\drawable-xhdpi\\add_compare.png"
+    },
+    {
+        "merged": "E:\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\bg_video.png",
+        "source": "E:\\Sa3rha\\app\\src\\main\\res\\drawable-xhdpi\\bg_video.png"
+    },
+    {
+        "merged": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_clear_black_24dp.png",
+        "source": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\src\\main\\res\\drawable-xhdpi\\ic_clear_black_24dp.png"
+    },
+    {
+        "merged": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\call_answer.png",
+        "source": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\src\\main\\res\\drawable-xhdpi\\call_answer.png"
+    },
+    {
         "merged": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\profile_picture.png",
         "source": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\src\\main\\res\\drawable-xhdpi\\profile_picture.png"
+    },
+    {
+        "merged": "E:\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_note_add_white_48dp.png",
+        "source": "E:\\Sa3rha\\app\\src\\main\\res\\drawable-xhdpi\\ic_note_add_white_48dp.png"
+    },
+    {
+        "merged": "E:\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_search_black_24dp.png",
+        "source": "E:\\Sa3rha\\app\\src\\main\\res\\drawable-xhdpi\\ic_search_black_24dp.png"
+    },
+    {
+        "merged": "E:\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\group.png",
+        "source": "E:\\Sa3rha\\app\\src\\main\\res\\drawable-xhdpi\\group.png"
+    },
+    {
+        "merged": "E:\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_play_circle_filled_white_48dp.png",
+        "source": "E:\\Sa3rha\\app\\src\\main\\res\\drawable-xhdpi\\ic_play_circle_filled_white_48dp.png"
     }
 ]

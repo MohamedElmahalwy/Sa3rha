@@ -1124,5 +1124,1131 @@
                 }
             }
         ]
+    },
+    {
+        "outputFile": "E:\\Sa3rha\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ar\\values-ar.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 48,
+                    "endOffset": 99
+                },
+                "from": {
+                    "file": "E:\\Sa3rha\\app\\src\\main\\res\\values-ar\\strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 542,
+                        "endColumn": 48,
+                        "endOffset": 586
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 104,
+                    "endColumn": 61,
+                    "endOffset": 161
+                },
+                "from": {
+                    "file": "E:\\Sa3rha\\app\\src\\main\\res\\values-ar\\strings.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1040,
+                        "endColumn": 61,
+                        "endOffset": 1097
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 166,
+                    "endColumn": 47,
+                    "endOffset": 209
+                },
+                "from": {
+                    "file": "E:\\Sa3rha\\app\\src\\main\\res\\values-ar\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 101,
+                        "endColumn": 47,
+                        "endOffset": 144
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 214,
+                    "endColumn": 60,
+                    "endOffset": 270
+                },
+                "from": {
+                    "file": "E:\\Sa3rha\\app\\src\\main\\res\\values-ar\\strings.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 1193,
+                        "endColumn": 60,
+                        "endOffset": 1249
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 275,
+                    "endColumn": 47,
+                    "endOffset": 318
+                },
+                "from": {
+                    "file": "E:\\Sa3rha\\app\\src\\main\\res\\values-ar\\strings.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1144,
+                        "endColumn": 47,
+                        "endOffset": 1187
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 323,
+                    "endColumn": 51,
+                    "endOffset": 370
+                },
+                "from": {
+                    "file": "E:\\Sa3rha\\app\\src\\main\\res\\values-ar\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 150,
+                        "endColumn": 51,
+                        "endOffset": 197
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 375,
+                    "endColumn": 55,
+                    "endOffset": 426
+                },
+                "from": {
+                    "file": "E:\\Sa3rha\\app\\src\\main\\res\\values-ar\\strings.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1255,
+                        "endColumn": 55,
+                        "endOffset": 1306
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 431,
+                    "endColumn": 50,
+                    "endOffset": 477
+                },
+                "from": {
+                    "file": "E:\\Sa3rha\\app\\src\\main\\res\\values-ar\\strings.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 1312,
+                        "endColumn": 50,
+                        "endOffset": 1358
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 482,
+                    "endColumn": 52,
+                    "endOffset": 530
+                },
+                "from": {
+                    "file": "E:\\Sa3rha\\app\\src\\main\\res\\values-ar\\strings.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 1364,
+                        "endColumn": 52,
+                        "endOffset": 1412
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 535,
+                    "endColumn": 116,
+                    "endOffset": 647
+                },
+                "from": {
+                    "file": "C:\\Users\\Maged\\.android\\build-cache\\73ce7d9b2a2e1293be40b95affaceb08030204a8\\output\\res\\values-ar\\values-ar.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 116,
+                        "endOffset": 167
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 652,
+                    "endColumn": 107,
+                    "endOffset": 755
+                },
+                "from": {
+                    "file": "C:\\Users\\Maged\\.android\\build-cache\\73ce7d9b2a2e1293be40b95affaceb08030204a8\\output\\res\\values-ar\\values-ar.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 172,
+                        "endColumn": 107,
+                        "endOffset": 275
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 760,
+                    "endColumn": 122,
+                    "endOffset": 878
+                },
+                "from": {
+                    "file": "C:\\Users\\Maged\\.android\\build-cache\\73ce7d9b2a2e1293be40b95affaceb08030204a8\\output\\res\\values-ar\\values-ar.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 280,
+                        "endColumn": 122,
+                        "endOffset": 398
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 883,
+                    "endColumn": 103,
+                    "endOffset": 982
+                },
+                "from": {
+                    "file": "C:\\Users\\Maged\\.android\\build-cache\\73ce7d9b2a2e1293be40b95affaceb08030204a8\\output\\res\\values-ar\\values-ar.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 403,
+                        "endColumn": 103,
+                        "endOffset": 502
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 987,
+                    "endColumn": 108,
+                    "endOffset": 1091
+                },
+                "from": {
+                    "file": "C:\\Users\\Maged\\.android\\build-cache\\73ce7d9b2a2e1293be40b95affaceb08030204a8\\output\\res\\values-ar\\values-ar.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 507,
+                        "endColumn": 108,
+                        "endOffset": 611
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 1096,
+                    "endColumn": 81,
+                    "endOffset": 1173
+                },
+                "from": {
+                    "file": "C:\\Users\\Maged\\.android\\build-cache\\73ce7d9b2a2e1293be40b95affaceb08030204a8\\output\\res\\values-ar\\values-ar.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 616,
+                        "endColumn": 81,
+                        "endOffset": 693
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 1178,
+                    "endColumn": 100,
+                    "endOffset": 1274
+                },
+                "from": {
+                    "file": "C:\\Users\\Maged\\.android\\build-cache\\73ce7d9b2a2e1293be40b95affaceb08030204a8\\output\\res\\values-ar\\values-ar.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 698,
+                        "endColumn": 100,
+                        "endOffset": 794
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1279,
+                    "endColumn": 113,
+                    "endOffset": 1388
+                },
+                "from": {
+                    "file": "C:\\Users\\Maged\\.android\\build-cache\\73ce7d9b2a2e1293be40b95affaceb08030204a8\\output\\res\\values-ar\\values-ar.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 799,
+                        "endColumn": 113,
+                        "endOffset": 908
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1393,
+                    "endColumn": 78,
+                    "endOffset": 1467
+                },
+                "from": {
+                    "file": "C:\\Users\\Maged\\.android\\build-cache\\73ce7d9b2a2e1293be40b95affaceb08030204a8\\output\\res\\values-ar\\values-ar.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 913,
+                        "endColumn": 78,
+                        "endOffset": 987
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1472,
+                    "endColumn": 78,
+                    "endOffset": 1546
+                },
+                "from": {
+                    "file": "C:\\Users\\Maged\\.android\\build-cache\\73ce7d9b2a2e1293be40b95affaceb08030204a8\\output\\res\\values-ar\\values-ar.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 992,
+                        "endColumn": 78,
+                        "endOffset": 1066
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1551,
+                    "endColumn": 78,
+                    "endOffset": 1625
+                },
+                "from": {
+                    "file": "C:\\Users\\Maged\\.android\\build-cache\\73ce7d9b2a2e1293be40b95affaceb08030204a8\\output\\res\\values-ar\\values-ar.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1071,
+                        "endColumn": 78,
+                        "endOffset": 1145
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1630,
+                    "endColumn": 104,
+                    "endOffset": 1730
+                },
+                "from": {
+                    "file": "C:\\Users\\Maged\\.android\\build-cache\\73ce7d9b2a2e1293be40b95affaceb08030204a8\\output\\res\\values-ar\\values-ar.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1150,
+                        "endColumn": 104,
+                        "endOffset": 1250
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1735,
+                    "endColumn": 100,
+                    "endOffset": 1831
+                },
+                "from": {
+                    "file": "C:\\Users\\Maged\\.android\\build-cache\\73ce7d9b2a2e1293be40b95affaceb08030204a8\\output\\res\\values-ar\\values-ar.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1255,
+                        "endColumn": 100,
+                        "endOffset": 1351
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1836,
+                    "endColumn": 95,
+                    "endOffset": 1927
+                },
+                "from": {
+                    "file": "C:\\Users\\Maged\\.android\\build-cache\\73ce7d9b2a2e1293be40b95affaceb08030204a8\\output\\res\\values-ar\\values-ar.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1356,
+                        "endColumn": 95,
+                        "endOffset": 1447
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 1932,
+                    "endColumn": 107,
+                    "endOffset": 2035
+                },
+                "from": {
+                    "file": "C:\\Users\\Maged\\.android\\build-cache\\73ce7d9b2a2e1293be40b95affaceb08030204a8\\output\\res\\values-ar\\values-ar.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1452,
+                        "endColumn": 107,
+                        "endOffset": 1555
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 2040,
+                    "endColumn": 102,
+                    "endOffset": 2138
+                },
+                "from": {
+                    "file": "C:\\Users\\Maged\\.android\\build-cache\\73ce7d9b2a2e1293be40b95affaceb08030204a8\\output\\res\\values-ar\\values-ar.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1560,
+                        "endColumn": 102,
+                        "endOffset": 1658
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 2143,
+                    "endColumn": 102,
+                    "endOffset": 2241
+                },
+                "from": {
+                    "file": "C:\\Users\\Maged\\.android\\build-cache\\73ce7d9b2a2e1293be40b95affaceb08030204a8\\output\\res\\values-ar\\values-ar.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1663,
+                        "endColumn": 102,
+                        "endOffset": 1761
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 2246,
+                    "endColumn": 118,
+                    "endOffset": 2360
+                },
+                "from": {
+                    "file": "C:\\Users\\Maged\\.android\\build-cache\\73ce7d9b2a2e1293be40b95affaceb08030204a8\\output\\res\\values-ar\\values-ar.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1766,
+                        "endColumn": 118,
+                        "endOffset": 1880
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 2365,
+                    "endColumn": 96,
+                    "endOffset": 2457
+                },
+                "from": {
+                    "file": "C:\\Users\\Maged\\.android\\build-cache\\73ce7d9b2a2e1293be40b95affaceb08030204a8\\output\\res\\values-ar\\values-ar.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1885,
+                        "endColumn": 96,
+                        "endOffset": 1977
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 2462,
+                    "endColumn": 55,
+                    "endOffset": 2513
+                },
+                "from": {
+                    "file": "E:\\Sa3rha\\app\\src\\main\\res\\values-ar\\strings.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 1424,
+                        "endColumn": 55,
+                        "endOffset": 1475
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 31,
+                    "startColumn": 4,
+                    "startOffset": 2518,
+                    "endColumn": 50,
+                    "endOffset": 2564
+                },
+                "from": {
+                    "file": "E:\\Sa3rha\\app\\src\\main\\res\\values-ar\\strings.xml",
+                    "position": {
+                        "startLine": 40,
+                        "startColumn": 4,
+                        "startOffset": 1979,
+                        "endColumn": 50,
+                        "endOffset": 2025
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 32,
+                    "startColumn": 4,
+                    "startOffset": 2569,
+                    "endColumn": 38,
+                    "endOffset": 2603
+                },
+                "from": {
+                    "file": "E:\\Sa3rha\\app\\src\\main\\res\\values-ar\\strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 203,
+                        "endColumn": 38,
+                        "endOffset": 237
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 33,
+                    "startColumn": 4,
+                    "startOffset": 2608,
+                    "endColumn": 42,
+                    "endOffset": 2646
+                },
+                "from": {
+                    "file": "E:\\Sa3rha\\app\\src\\main\\res\\values-ar\\strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 57,
+                        "endColumn": 42,
+                        "endOffset": 95
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 2651,
+                    "endColumn": 53,
+                    "endOffset": 2700
+                },
+                "from": {
+                    "file": "E:\\Sa3rha\\app\\src\\main\\res\\values-ar\\strings.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 4,
+                        "startOffset": 1481,
+                        "endColumn": 53,
+                        "endOffset": 1530
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 35,
+                    "startColumn": 4,
+                    "startOffset": 2705,
+                    "endColumn": 76,
+                    "endOffset": 2777
+                },
+                "from": {
+                    "file": "E:\\Sa3rha\\app\\src\\main\\res\\values-ar\\strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 464,
+                        "endColumn": 76,
+                        "endOffset": 536
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 2782,
+                    "endColumn": 39,
+                    "endOffset": 2817
+                },
+                "from": {
+                    "file": "E:\\Sa3rha\\app\\src\\main\\res\\values-ar\\strings.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1103,
+                        "endColumn": 39,
+                        "endOffset": 1138
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 2822,
+                    "endColumn": 54,
+                    "endOffset": 2872
+                },
+                "from": {
+                    "file": "E:\\Sa3rha\\app\\src\\main\\res\\values-ar\\strings.xml",
+                    "position": {
+                        "startLine": 42,
+                        "startColumn": 4,
+                        "startOffset": 2077,
+                        "endColumn": 54,
+                        "endOffset": 2127
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 2877,
+                    "endColumn": 57,
+                    "endOffset": 2930
+                },
+                "from": {
+                    "file": "E:\\Sa3rha\\app\\src\\main\\res\\values-ar\\strings.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 692,
+                        "endColumn": 57,
+                        "endOffset": 745
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 39,
+                    "startColumn": 4,
+                    "startOffset": 2935,
+                    "endColumn": 55,
+                    "endOffset": 2986
+                },
+                "from": {
+                    "file": "E:\\Sa3rha\\app\\src\\main\\res\\values-ar\\strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 635,
+                        "endColumn": 55,
+                        "endOffset": 686
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 40,
+                    "startColumn": 4,
+                    "startOffset": 2991,
+                    "endColumn": 41,
+                    "endOffset": 3028
+                },
+                "from": {
+                    "file": "E:\\Sa3rha\\app\\src\\main\\res\\values-ar\\strings.xml",
+                    "position": {
+                        "startLine": 31,
+                        "startColumn": 4,
+                        "startOffset": 1536,
+                        "endColumn": 41,
+                        "endOffset": 1573
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 41,
+                    "startColumn": 4,
+                    "startOffset": 3033,
+                    "endColumn": 47,
+                    "endOffset": 3076
+                },
+                "from": {
+                    "file": "E:\\Sa3rha\\app\\src\\main\\res\\values-ar\\strings.xml",
+                    "position": {
+                        "startLine": 32,
+                        "startColumn": 4,
+                        "startOffset": 1579,
+                        "endColumn": 47,
+                        "endOffset": 1622
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 42,
+                    "startColumn": 4,
+                    "startOffset": 3081,
+                    "endColumn": 51,
+                    "endOffset": 3128
+                },
+                "from": {
+                    "file": "E:\\Sa3rha\\app\\src\\main\\res\\values-ar\\strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 243,
+                        "endColumn": 51,
+                        "endOffset": 290
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 43,
+                    "startColumn": 4,
+                    "startOffset": 3133,
+                    "endColumn": 47,
+                    "endOffset": 3176
+                },
+                "from": {
+                    "file": "E:\\Sa3rha\\app\\src\\main\\res\\values-ar\\strings.xml",
+                    "position": {
+                        "startLine": 33,
+                        "startColumn": 4,
+                        "startOffset": 1628,
+                        "endColumn": 47,
+                        "endOffset": 1671
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 44,
+                    "startColumn": 4,
+                    "startOffset": 3181,
+                    "endColumn": 41,
+                    "endOffset": 3218
+                },
+                "from": {
+                    "file": "E:\\Sa3rha\\app\\src\\main\\res\\values-ar\\strings.xml",
+                    "position": {
+                        "startLine": 34,
+                        "startColumn": 4,
+                        "startOffset": 1677,
+                        "endColumn": 41,
+                        "endOffset": 1714
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 45,
+                    "startColumn": 4,
+                    "startOffset": 3223,
+                    "endColumn": 45,
+                    "endOffset": 3264
+                },
+                "from": {
+                    "file": "E:\\Sa3rha\\app\\src\\main\\res\\values-ar\\strings.xml",
+                    "position": {
+                        "startLine": 35,
+                        "startColumn": 4,
+                        "startOffset": 1720,
+                        "endColumn": 45,
+                        "endOffset": 1761
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 46,
+                    "startColumn": 4,
+                    "startOffset": 3269,
+                    "endColumn": 62,
+                    "endOffset": 3327
+                },
+                "from": {
+                    "file": "E:\\Sa3rha\\app\\src\\main\\res\\values-ar\\strings.xml",
+                    "position": {
+                        "startLine": 36,
+                        "startColumn": 4,
+                        "startOffset": 1767,
+                        "endColumn": 62,
+                        "endOffset": 1825
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 47,
+                    "startColumn": 4,
+                    "startOffset": 3332,
+                    "endColumn": 55,
+                    "endOffset": 3383
+                },
+                "from": {
+                    "file": "E:\\Sa3rha\\app\\src\\main\\res\\values-ar\\strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 407,
+                        "endColumn": 55,
+                        "endOffset": 458
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 48,
+                    "startColumn": 4,
+                    "startOffset": 3388,
+                    "endColumn": 53,
+                    "endOffset": 3437
+                },
+                "from": {
+                    "file": "E:\\Sa3rha\\app\\src\\main\\res\\values-ar\\strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 296,
+                        "endColumn": 53,
+                        "endOffset": 345
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 49,
+                    "startColumn": 4,
+                    "startOffset": 3442,
+                    "endColumn": 41,
+                    "endOffset": 3479
+                },
+                "from": {
+                    "file": "E:\\Sa3rha\\app\\src\\main\\res\\values-ar\\strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 592,
+                        "endColumn": 41,
+                        "endOffset": 629
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 50,
+                    "startColumn": 4,
+                    "startOffset": 3484,
+                    "endColumn": 54,
+                    "endOffset": 3534
+                },
+                "from": {
+                    "file": "E:\\Sa3rha\\app\\src\\main\\res\\values-ar\\strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 351,
+                        "endColumn": 54,
+                        "endOffset": 401
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 51,
+                    "startColumn": 4,
+                    "startOffset": 3539,
+                    "endColumn": 80,
+                    "endOffset": 3615
+                },
+                "from": {
+                    "file": "C:\\Users\\Maged\\.android\\build-cache\\73ce7d9b2a2e1293be40b95affaceb08030204a8\\output\\res\\values-ar\\values-ar.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1982,
+                        "endColumn": 80,
+                        "endOffset": 2058
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 52,
+                    "startColumn": 4,
+                    "startOffset": 3620,
+                    "endColumn": 78,
+                    "endOffset": 3694
+                },
+                "from": {
+                    "file": "E:\\Sa3rha\\app\\src\\main\\res\\values-ar\\strings.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 884,
+                        "endColumn": 78,
+                        "endOffset": 958
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 53,
+                    "startColumn": 4,
+                    "startOffset": 3699,
+                    "endColumn": 76,
+                    "endOffset": 3771
+                },
+                "from": {
+                    "file": "E:\\Sa3rha\\app\\src\\main\\res\\values-ar\\strings.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 806,
+                        "endColumn": 76,
+                        "endOffset": 878
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 54,
+                    "startColumn": 4,
+                    "startOffset": 3776,
+                    "endColumn": 74,
+                    "endOffset": 3846
+                },
+                "from": {
+                    "file": "E:\\Sa3rha\\app\\src\\main\\res\\values-ar\\strings.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 964,
+                        "endColumn": 74,
+                        "endOffset": 1034
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 55,
+                    "startColumn": 4,
+                    "startOffset": 3851,
+                    "endColumn": 53,
+                    "endOffset": 3900
+                },
+                "from": {
+                    "file": "E:\\Sa3rha\\app\\src\\main\\res\\values-ar\\strings.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 751,
+                        "endColumn": 53,
+                        "endOffset": 800
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 56,
+                    "startColumn": 4,
+                    "startOffset": 3905,
+                    "endColumn": 44,
+                    "endOffset": 3945
+                },
+                "from": {
+                    "file": "E:\\Sa3rha\\app\\src\\main\\res\\values-ar\\strings.xml",
+                    "position": {
+                        "startLine": 41,
+                        "startColumn": 4,
+                        "startOffset": 2031,
+                        "endColumn": 44,
+                        "endOffset": 2071
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 57,
+                    "startColumn": 4,
+                    "startOffset": 3950,
+                    "endColumn": 100,
+                    "endOffset": 4046
+                },
+                "from": {
+                    "file": "C:\\Users\\Maged\\.android\\build-cache\\73ce7d9b2a2e1293be40b95affaceb08030204a8\\output\\res\\values-ar\\values-ar.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 2063,
+                        "endColumn": 100,
+                        "endOffset": 2159
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 58,
+                    "startColumn": 4,
+                    "startOffset": 4051,
+                    "endColumn": 48,
+                    "endOffset": 4095
+                },
+                "from": {
+                    "file": "E:\\Sa3rha\\app\\src\\main\\res\\values-ar\\strings.xml",
+                    "position": {
+                        "startLine": 38,
+                        "startColumn": 4,
+                        "startOffset": 1877,
+                        "endColumn": 48,
+                        "endOffset": 1921
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 59,
+                    "startColumn": 4,
+                    "startOffset": 4100,
+                    "endColumn": 44,
+                    "endOffset": 4140
+                },
+                "from": {
+                    "file": "E:\\Sa3rha\\app\\src\\main\\res\\values-ar\\strings.xml",
+                    "position": {
+                        "startLine": 37,
+                        "startColumn": 4,
+                        "startOffset": 1831,
+                        "endColumn": 44,
+                        "endOffset": 1871
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 60,
+                    "startColumn": 4,
+                    "startOffset": 4145,
+                    "endColumn": 50,
+                    "endOffset": 4191
+                },
+                "from": {
+                    "file": "E:\\Sa3rha\\app\\src\\main\\res\\values-ar\\strings.xml",
+                    "position": {
+                        "startLine": 39,
+                        "startColumn": 4,
+                        "startOffset": 1927,
+                        "endColumn": 50,
+                        "endOffset": 1973
+                    }
+                }
+            }
+        ]
     }
 ]

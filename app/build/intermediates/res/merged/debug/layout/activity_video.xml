@@ -17,7 +17,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#fff"
+        android:background="@drawable/bg_video"
         android:id="@+id/RL_VideoContainer"
         >
 
@@ -25,7 +25,6 @@
             android:id="@+id/IV_playVideo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#000"
             android:src="@drawable/ic_play_circle_filled_white_48dp"
             android:layout_centerInParent="true"
             ></ImageView>
@@ -36,6 +35,8 @@
             android:layout_alignParentBottom="true"
             android:layout_margin="30dp"
             android:id="@+id/BTN_skip"
+            android:textColor="@color/white"
+            android:background="@drawable/border_style_white"
             ></Button>
 
     </RelativeLayout>

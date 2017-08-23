@@ -1,8 +1,9 @@
 package com.sa3rha.android.sa3rha.Ui.Activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.ExpandableListView;
 import android.widget.ImageView;
 
@@ -67,6 +68,14 @@ public class CategoryActivity extends BaseActivity {
         if (CurrentLang == "ar") {
             iv_backHome.setImageResource(R.drawable.ic_arrow_forward_white_24dp);
         }
+        expandableListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
+            @Override
+            public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
+                startActivity(new Intent(CategoryActivity.this,NewCarDetailsActivity.class));
+                overridePendingTransition(R.anim.enter_from_left, R.anim.exit_out_right);
+                return false;
+            }
+        });
     }
     @OnClick(R.id.IV_backHome)
     public void goHome(){

@@ -64,6 +64,10 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name="com.sa3rha.android.sa3rha.Ui.BaseActivity" />
+        <activity
+            android:name="com.sa3rha.android.sa3rha.Ui.Activities.NewCarDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
