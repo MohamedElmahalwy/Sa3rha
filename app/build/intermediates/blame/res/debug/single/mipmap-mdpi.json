@@ -4,15 +4,7 @@
         "source": "E:\\Sa3rha\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher_round.png",
-        "source": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "E:\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
         "source": "E:\\Sa3rha\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
-        "source": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     }
 ]

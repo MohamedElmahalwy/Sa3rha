@@ -6,11 +6,17 @@
       <ScrollView
           android:layout_width="match_parent"
           android:layout_height="match_parent">
-        <LinearLayout
+
+          <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-
+              <FrameLayout
+                  android:id="@+id/youtube_fragment"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_centerHorizontal="true"
+                  android:visibility="visible" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
