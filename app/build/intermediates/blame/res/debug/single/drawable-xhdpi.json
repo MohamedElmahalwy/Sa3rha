@@ -16,6 +16,10 @@
         "source": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\src\\main\\res\\drawable-xhdpi\\ic_add_white_24dp.png"
     },
     {
+        "merged": "E:\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\logo_copy.png",
+        "source": "E:\\Sa3rha\\app\\src\\main\\res\\drawable-xhdpi\\logo_copy.png"
+    },
+    {
         "merged": "E:\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\profile_picture.png",
         "source": "E:\\Sa3rha\\app\\src\\main\\res\\drawable-xhdpi\\profile_picture.png"
     },

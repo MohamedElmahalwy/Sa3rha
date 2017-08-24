@@ -1,11 +1,11 @@
 package com.sa3rha.android.sa3rha.Ui.Activities;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
 import android.view.View;
 import android.view.Window;
@@ -35,6 +35,8 @@ public class OldCarDetailsActivity extends BaseActivity {
     ViewPager vp_slider;
     @BindView(R.id.LL_dots)
     LinearLayout ll_dots;
+    @BindView(R.id.IV_doCompare)
+    ImageView iv_doCompare;
     SliderPagerAdapter sliderPagerAdapter;
     Dialog dialog;
     //page position  belong to viewpager ImageView
@@ -116,6 +118,11 @@ public class OldCarDetailsActivity extends BaseActivity {
             }
         });
         dialog.show();
+    }
+    @OnClick(R.id.IV_doCompare)
+    public void dpCmpare(){
+        startActivity(new Intent(OldCarDetailsActivity.this,CompareActivity.class));
+        overridePendingTransition(R.anim.enter_from_left, R.anim.exit_out_right);
     }
 
 

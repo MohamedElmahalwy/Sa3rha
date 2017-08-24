@@ -10,10 +10,10 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.sa3rha.android.sa3rha.Controller.MainPagerAdapter;
+import com.sa3rha.android.sa3rha.R;
 import com.sa3rha.android.sa3rha.Ui.BaseActivity;
 import com.sa3rha.android.sa3rha.Ui.Fragments.NewBrandsFragment;
 import com.sa3rha.android.sa3rha.Ui.Fragments.OldCarsFragment;
-import com.sa3rha.android.sa3rha.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -32,6 +32,7 @@ public class MainActivity extends BaseActivity {
     @BindView(R.id.Linear_ContainerOfSearchBox)
     LinearLayout linear_containerOfSearchBox;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,7 +45,6 @@ public class MainActivity extends BaseActivity {
     }
 
     private void init() {
-
     }
 
     private void setupViewPager(ViewPager viewPager) {

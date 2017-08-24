@@ -1,7 +1,7 @@
 package com.sa3rha.android.sa3rha.Ui.Activities;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.ImageView;
@@ -22,6 +22,8 @@ public class ShowResultActivity extends BaseActivity {
     RecyclerView rv_ShowResult;
     @BindView(R.id.IV_backHome)
     ImageView iv_back;
+    @BindView(R.id.IV_doCompare)
+    ImageView iv_doCompare;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +46,11 @@ public class ShowResultActivity extends BaseActivity {
     @OnClick(R.id.IV_backHome)
     public void backHome(){
         finish();
+    }
+    @OnClick(R.id.IV_doCompare)
+    public void dpCmpare(){
+        startActivity(new Intent(ShowResultActivity.this,CompareActivity.class));
+        overridePendingTransition(R.anim.enter_from_left, R.anim.exit_out_right);
     }
 
 

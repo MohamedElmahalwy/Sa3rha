@@ -46,6 +46,12 @@
                     android:textColor="@color/white"
                     android:text="CarName"
                     android:gravity="center"></TextView>
+                <ImageView
+                    android:id="@+id/IV_doCompare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:src="@drawable/combined_shape"></ImageView>
 
 
             </LinearLayout>

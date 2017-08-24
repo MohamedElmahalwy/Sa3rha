@@ -1,318 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/lightGray"
-    tools:context="com.sa3rha.android.sa3rha.Ui.Activities.NewCarDetailsActivity">
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay">
-
-            <LinearLayout
-                android:id="@+id/Linear_ContainerOfSearchBox"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/IV_backHome"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="10dp"
-                    android:src="@drawable/ic_arrow_back_white_24dp"></ImageView>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="80"
-                    android:gravity="center"
-                    android:text="CarName"
-                    android:textColor="@color/white"
-                    android:textSize="20dp"></TextView>
-                <ImageView
-                    android:id="@+id/IV_doCompare"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="10dp"
-                    android:src="@drawable/combined_shape"></ImageView>
-
-            </LinearLayout>
-        </android.support.v7.widget.Toolbar>
-
-
-    </android.support.design.widget.AppBarLayout>
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+      <ScrollView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            >
-            <android.support.v7.widget.CardView
-                xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
-                >
+            android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    >
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="20dp"
-                        android:layout_marginTop="10dp"
-                        android:orientation="horizontal"
-                        android:weightSum="100"
-                        android:background="@color/lightGray2"
-                        >
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:background="@color/lightBllue"
-                            >
-                            <ImageView
-                                android:id="@+id/IV_addToCompare"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="5dp"
-                                android:layout_gravity="center"
-                                android:layout_marginRight="5dp"
-                                android:layout_weight="20"
-                                android:padding="10dp"
-                                android:src="@drawable/add_compare"></ImageView>
-                        </LinearLayout>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/AddToBin"
-                            android:textSize="15dp"
-                            android:gravity="center"
-                            android:padding="5dp"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginRight="5dp"
-                            ></TextView>
-
-
-                    </LinearLayout>
-                    <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="100dp"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="10dp"
-                        android:id="@+id/IV_car"
-                        android:src="@mipmap/ic_launcher"
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/TV_carName"
-                        android:textColor="@color/gray_dark"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="10dp"
-                        android:text="CarName"
-                        android:textSize="20dp"
-
-                        />
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="10dp"
-
-                        >
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/price"
-                            android:textColor="@color/colorPrimaryDark"
-                            android:textSize="15dp"
-                            />
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="40,0000"
-                            android:textSize="15dp"
-                            android:textColor="@color/colorPrimaryDark"
-                            />
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:background="#eeeeee"
-                        android:orientation="horizontal"
-                        android:weightSum="90">
-
-                        <Button
-                            android:layout_width="0dp"
-                            android:layout_height="40dp"
-                            android:layout_gravity="center"
-                            android:layout_margin="10dp"
-                            android:layout_weight="30"
-                            android:background="@color/lightBllue"
-                            android:text="@string/insurance_offer"
-                            android:textColor="@color/white"
-                            android:textSize="13dp"
-                            android:textAllCaps="false"
-                            android:id="@+id/BTN_insurance_offer"
-                            />
-
-                        <Button
-                            android:layout_width="0dp"
-                            android:layout_height="40dp"
-                            android:layout_gravity="center"
-                            android:layout_margin="10dp"
-                            android:layout_weight="30"
-                            android:background="@color/colorPrimaryDark"
-                            android:text="@string/installment_offer"
-                            android:textColor="@color/white"
-                            android:textSize="13dp"
-                            android:textAllCaps="false"
-                            android:id="@+id/BTN_installment_offer"
-                            ></Button>
-
-                        <Button
-                            android:layout_width="0dp"
-                            android:layout_height="40dp"
-                            android:layout_gravity="center"
-                            android:layout_margin="10dp"
-                            android:layout_weight="30"
-                            android:background="@color/lightBllue"
-                            android:text="@string/shading_offer"
-                            android:textAllCaps="false"
-                            android:textColor="@color/white"
-                            android:id="@+id/BTN_shading_offer"
-                            android:textSize="13dp">
-
-                        </Button>
-
-
-                    </LinearLayout>
-
-
-                </LinearLayout>
-
-            </android.support.v7.widget.CardView>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:weightSum="90"
-                android:background="@color/yellow"
-                >
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_weight="30"
-                    android:layout_height="wrap_content"
-                    android:src="@mipmap/ic_launcher"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="10dp"
-                    android:padding="10dp"
-
-                    />
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_weight="30"
-                    android:layout_height="wrap_content"
-                    android:src="@mipmap/ic_launcher"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="10dp"
-                    android:padding="10dp"
-
-                    />
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_weight="30"
-                    android:layout_height="wrap_content"
-                    android:src="@mipmap/ic_launcher"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="10dp"
-                    android:padding="10dp"
-
-                    />
-
-
-            </LinearLayout>
-            <Button
-                android:id="@+id/BTN_makeOrder"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_gravity="center"
-                android:layout_margin="20dp"
-                android:background="@color/lightBllue"
-                android:text="@string/MakeOrdernow"
-                android:textAllCaps="false"
-                android:textColor="@color/white"
-                android:textSize="20dp"
-                android:onClick="hideBottomSheet"
-                />
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                >
-                <com.google.android.youtube.player.YouTubePlayerView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/YouTubeView"
-                    >
-                </com.google.android.youtube.player.YouTubePlayerView>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:id="@+id/RL_VideoContainer"
-                    >
-
-                    <ImageView
-                        android:id="@+id/IV_playVideo"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_play_circle_filled_white_48dp"
-                        android:layout_centerInParent="true"
-                        ></ImageView>
-
-                </RelativeLayout>
-
-            </FrameLayout>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/lightGray"
                 android:padding="10dp"
                 android:text="Assuming u would use a linear layout(i have considered a vertical linear layout)..and have a view just below your linear layout.Now for this view provide a start colour and end colour.. I also wanted to get this thing,its working for me..If you need a even better effect,then just work around the start and end colour." />
+
             <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 android:background="@color/lightGray">
 
                 <TableRow
@@ -331,14 +40,15 @@
                             android:text="Mark" />
 
                         <TextView
+                            android:id="@+id/TV_carNameInTable"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:ems="10"
                             android:padding="5dp"
-                            android:id="@+id/TV_carNameInTable"
                             android:text="CarName" />
                     </LinearLayout>
                 </TableRow>
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -410,11 +120,11 @@
                             />
 
                         <TextView
+                            android:id="@+id/TV_carVariant"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:ems="10"
                             android:padding="5dp"
-                            android:id="@+id/TV_carVariant"
                             android:text="AVANTAGARDE" />
                     </LinearLayout>
 
@@ -451,11 +161,11 @@
                             />
 
                         <TextView
+                            android:id="@+id/TV_carSeries"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:ems="10"
                             android:padding="5dp"
-                            android:id="@+id/TV_carSeries"
                             android:text="W20TG45" />
                     </LinearLayout>
 
@@ -718,24 +428,7 @@
 
 
             </TableLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:orientation="vertical">
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginBottom="20dp"
-                    android:src="@mipmap/ic_launcher"
-                    android:id="@+id/IV_logo"
-                    />
-
-
-            </LinearLayout>
         </LinearLayout>
-    </ScrollView>
+      </ScrollView>
 </LinearLayout>

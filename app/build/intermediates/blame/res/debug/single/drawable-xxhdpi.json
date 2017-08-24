@@ -88,6 +88,10 @@
         "source": "E:\\Sa3rha\\app\\src\\main\\res\\drawable-xxhdpi\\ic_arrow_forward_white_24dp.png"
     },
     {
+        "merged": "E:\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\logo_copy.png",
+        "source": "E:\\Sa3rha\\app\\src\\main\\res\\drawable-xxhdpi\\logo_copy.png"
+    },
+    {
         "merged": "E:\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_note_add_white_48dp.png",
         "source": "E:\\Sa3rha\\app\\src\\main\\res\\drawable-xxhdpi\\ic_note_add_white_48dp.png"
     },

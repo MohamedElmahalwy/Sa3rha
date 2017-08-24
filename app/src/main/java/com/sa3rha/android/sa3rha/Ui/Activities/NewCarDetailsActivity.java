@@ -50,6 +50,8 @@ public class NewCarDetailsActivity extends YouTubeBaseActivity implements YouTub
     Button btn_shading_offer;
     @BindView(R.id. BTN_makeOrder)
     Button btn_makeOrder;
+    @BindView(R.id.IV_doCompare)
+    ImageView iv_doCompare;
 
 
 
@@ -75,6 +77,7 @@ public class NewCarDetailsActivity extends YouTubeBaseActivity implements YouTub
         iv_playVideo.setOnClickListener(this);
         iv_backHome.setOnClickListener(this);
         iv_addToCompare.setOnClickListener(this);
+        iv_doCompare.setOnClickListener(this);
     }
 
     @Override
@@ -198,6 +201,9 @@ public class NewCarDetailsActivity extends YouTubeBaseActivity implements YouTub
         }
         else if(id==R.id.IV_addToCompare){
             addedToCombare();
+        }else if(id==R.id.IV_doCompare){
+            startActivity(new Intent(NewCarDetailsActivity.this,CompareActivity.class));
+            overridePendingTransition(R.anim.enter_from_left, R.anim.exit_out_right);
         }
 
     }
@@ -209,7 +215,6 @@ public class NewCarDetailsActivity extends YouTubeBaseActivity implements YouTub
         //set background
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         Button btn_continue = (Button) dialog.findViewById(R.id.BTN_continue);
-
         // to set width and height
         WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
         lp.copyFrom(dialog.getWindow().getAttributes());

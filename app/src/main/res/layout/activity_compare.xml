@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Ui.Activities.ShowResultActivity">
+    tools:context="com.sa3rha.android.sa3rha.Ui.Activities.CompareActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -26,9 +26,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:gravity="center"
-                android:orientation="horizontal"
-
-                >
+                android:orientation="horizontal">
 
                 <ImageView
                     android:id="@+id/IV_backHome"
@@ -36,37 +34,51 @@
                     android:layout_height="wrap_content"
                     android:padding="10dp"
                     android:src="@drawable/ic_arrow_back_white_24dp"></ImageView>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="80"
-                    android:gravity="center"
-                    android:text="CarCategoryName"
-                    android:textColor="@color/white"
-                    android:textSize="20dp"></TextView>
-
                 <ImageView
-                    android:id="@+id/IV_doCompare"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="10dp"
-                    android:src="@drawable/combined_shape"></ImageView>
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:src="@drawable/logo_copy"
+                    />
 
             </LinearLayout>
         </android.support.v7.widget.Toolbar>
 
 
     </android.support.design.widget.AppBarLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <android.support.v7.widget.RecyclerView
+        <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#fff"
+            android:id="@+id/tab"
+
+            >
+
+        </android.support.design.widget.TabLayout>
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_launcher_round"
+            android:layout_gravity="center_horizontal"
+            />
+    </FrameLayout>
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/RV_ShowResult"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
         >
-    </android.support.v7.widget.RecyclerView>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+    </android.support.v4.view.ViewPager>
+    </LinearLayout>
 </LinearLayout>

@@ -1,19 +1,19 @@
 [
     {
-        "merged": "E:\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_bottom_sheet_slide_in.xml",
-        "source": "C:\\Users\\Maged\\.android\\build-cache\\f57076387404c3b0030f492060b1f9ecca8f7e7a\\output\\res\\anim\\design_bottom_sheet_slide_in.xml"
-    },
-    {
         "merged": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
         "source": "C:\\Users\\Mohamed Hefny\\.android\\build-cache\\75a1e15d27a353e47dfc037eac094dbb2d218fba\\output\\res\\anim\\abc_popup_exit.xml"
     },
     {
-        "merged": "E:\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\anim\\enter_from_left.xml",
-        "source": "E:\\Sa3rha\\app\\src\\main\\res\\anim\\enter_from_left.xml"
+        "merged": "E:\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_bottom_sheet_slide_in.xml",
+        "source": "C:\\Users\\Maged\\.android\\build-cache\\f57076387404c3b0030f492060b1f9ecca8f7e7a\\output\\res\\anim\\design_bottom_sheet_slide_in.xml"
     },
     {
         "merged": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\anim\\enter_from_left.xml",
         "source": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\src\\main\\res\\anim\\enter_from_left.xml"
+    },
+    {
+        "merged": "E:\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\anim\\enter_from_left.xml",
+        "source": "E:\\Sa3rha\\app\\src\\main\\res\\anim\\enter_from_left.xml"
     },
     {
         "merged": "E:\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\anim\\slide_down.xml",

@@ -104,6 +104,10 @@
         "source": "E:\\Sa3rha\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
+        "merged": "E:\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_compare.xml",
+        "source": "E:\\Sa3rha\\app\\src\\main\\res\\layout\\activity_compare.xml"
+    },
+    {
         "merged": "E:\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_old_car.xml",
         "source": "E:\\Sa3rha\\app\\src\\main\\res\\layout\\fragment_old_car.xml"
     },
@@ -390,6 +394,10 @@
     {
         "merged": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
         "source": "C:\\Users\\Mohamed Hefny\\.android\\build-cache\\75a1e15d27a353e47dfc037eac094dbb2d218fba\\output\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "E:\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_compare.xml",
+        "source": "E:\\Sa3rha\\app\\src\\main\\res\\layout\\fragment_compare.xml"
     },
     {
         "merged": "E:\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
