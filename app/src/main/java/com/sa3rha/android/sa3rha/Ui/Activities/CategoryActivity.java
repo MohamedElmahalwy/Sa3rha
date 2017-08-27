@@ -1,15 +1,24 @@
 package com.sa3rha.android.sa3rha.Ui.Activities;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.view.View;
 import android.widget.ExpandableListView;
 import android.widget.ImageView;
+import android.widget.TextView;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
 import com.sa3rha.android.sa3rha.Controller.ExpandableListViewAdapter;
 import com.sa3rha.android.sa3rha.R;
 import com.sa3rha.android.sa3rha.Ui.BaseActivity;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -23,63 +32,127 @@ import butterknife.OnClick;
 public class CategoryActivity extends BaseActivity {
     @BindView(R.id.IV_backHome)
     ImageView iv_backHome;
+    TextView tvCarName;
     ActionBarDrawerToggle toggle;
     @BindView(R.id.expandable)
-    ExpandableListView expandableListView ;
+    ExpandableListView expandableListView;
+    ExpandableListViewAdapter adapter;
     private ArrayList<String> expandableListTitle;
     int brand_Id;
     String brand_Title;
+    RequestQueue requestQueue;
+    String bTitle = "";
+    int bId;
+    String sub = "";
+    List<String> subBrandArr;
+    List<String> subBrandCarArr;
+    public static int countBrand = 0;
+    HashMap<String, List<String>> expandableListDetail;
+    ArrayList<String> dataStore;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category);
-
         ButterKnife.bind(this);
+        requestQueue = Volley.newRequestQueue(this);
         init();
-        HashMap<String, List<String>> expandableListDetail = new HashMap<String, List<String>>();
-        brand_Id = getIntent().getIntExtra("brand_Id",0);
+        expandableListDetail = new HashMap<String, List<String>>();
+        brand_Id = getIntent().getIntExtra("brand_Id", 0);
+        System.out.println(brand_Id);
         brand_Title = getIntent().getStringExtra("brand_Title");
+        tvCarName.setText(brand_Title);
 
-        List<String> fgcroz = new ArrayList<String>();
-        fgcroz.add("Brazil");
-        fgcroz.add("Spain");
-        fgcroz.add("Germany");
-
-        List<String> toyota = new ArrayList<String>();
-        toyota.add("تويوتا كورلا هاي لاين");
-        toyota.add("تويوتا كورلا بايز لاين");
-
-
-
-        expandableListDetail.put("تويوتا اف جاي كروزر", fgcroz);
-        expandableListDetail.put("تويوتا كورولا",toyota);
-
-        expandableListTitle = new ArrayList<String>(expandableListDetail.keySet());
-        ExpandableListViewAdapter adapter = new ExpandableListViewAdapter(expandableListTitle,expandableListDetail,CategoryActivity.this);
-        expandableListView.setAdapter(adapter);
-
+        getchosenCar();
 
     }
 
     private void init() {
-        String CurrentLang= Locale.getDefault().getLanguage();
+
+        subBrandCarArr = new ArrayList<String>();
+
+        subBrandArr = new ArrayList<String>();
+
+
+
+        iv_backHome = (ImageView) findViewById(R.id.IV_officialAgent);
+        tvCarName = (TextView) findViewById(R.id.carName);
+
+        String CurrentLang = Locale.getDefault().getLanguage();
         if (CurrentLang == "ar") {
             iv_backHome.setImageResource(R.drawable.ic_arrow_forward_white_24dp);
         }
-        expandableListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
+    }
+
+    @OnClick(R.id.IV_backHome)
+    public void goHome() {
+        finish();
+    }
+
+    //    ************************************************************************************************************//
+    public void getchosenCar() {
+
+        String url = "http://mobileaders.com/saarha/public/api/subBrands";
+        JSONObject request = new JSONObject();
+        try {
+            request.put("brandId", brand_Id);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        JsonObjectRequest subBrandObject = new JsonObjectRequest(Request.Method.POST, url, request,
+                new Response.Listener<JSONObject>() {
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        try {
+
+                            JSONArray jsonArray = response.getJSONArray("data");
+                            for (int i = 0; i < jsonArray.length(); i++) {
+                                subBrandCarArr = new ArrayList<String>();
+
+                                JSONObject subBrand = jsonArray.getJSONObject(i);
+
+
+                                bTitle = subBrand.getString("subBrandTitle");
+                                bId = subBrand.getInt("subBrandId");
+
+                                JSONArray jsonarrayCar = subBrand.getJSONArray("get_cars");
+                                subBrandArr.add(i, bTitle);
+
+                                for (int j = 0; j < jsonarrayCar.length(); j++) {
+                                    JSONObject subBrandCar = jsonarrayCar.getJSONObject(j);
+                                    sub = subBrandCar.getString("carTitle");
+                                    subBrandCarArr.add(sub);
+                                }
+                                expandableListDetail.put("" + subBrandArr.get(i), subBrandCarArr);
+                                }
+
+                            expandableListTitle = new ArrayList<String>(expandableListDetail.keySet());
+                            adapter = new ExpandableListViewAdapter(expandableListTitle, expandableListDetail, CategoryActivity.this);
+                            expandableListView.setAdapter(adapter);
+
+
+
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+
+
+                    }
+
+                }, new Response.ErrorListener() {
             @Override
-            public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
-                startActivity(new Intent(CategoryActivity.this,NewCarDetailsActivity.class));
-                overridePendingTransition(R.anim.enter_from_left, R.anim.exit_out_right);
-                return false;
+            public void onErrorResponse(VolleyError error) {
+                System.out.println("Error");
+
             }
         });
-    }
-    @OnClick(R.id.IV_backHome)
-    public void goHome(){
-        finish();
+
+
+        requestQueue.add(subBrandObject);
+
+
     }
 
 
