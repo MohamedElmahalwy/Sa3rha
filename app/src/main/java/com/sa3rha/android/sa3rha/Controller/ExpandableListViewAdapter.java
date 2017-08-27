@@ -24,8 +24,8 @@ public class ExpandableListViewAdapter extends BaseExpandableListAdapter {
         this.context = context;
         this.expandableListTitle =expandableListTitle;
         contans = new ArrayList<>();
-        contans.add("(تحتوي علي تلاته انواع) ");
-        contans.add("(تحتوي علي نوعين) ");
+        contans.add("( الأنواع ) ");
+        contans.add("( الأنواع ) ");
     }
 
 
