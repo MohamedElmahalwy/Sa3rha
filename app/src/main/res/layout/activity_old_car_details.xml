@@ -45,7 +45,9 @@
                     android:textSize="20dp"
                     android:textColor="@color/white"
                     android:text="CarName"
-                    android:gravity="center"></TextView>
+                    android:gravity="center"
+                    android:id="@+id/tvUsedCarDetailsNameToolBar"
+                    ></TextView>
                 <ImageView
                     android:id="@+id/IV_doCompare"
                     android:layout_width="wrap_content"
@@ -136,7 +138,9 @@
                 android:gravity="center"
                 android:padding="10dp"
                 android:text="CarName"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                android:id="@+id/tvUsedCarDetailsName"
+                />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -184,7 +188,9 @@
                         android:layout_height="wrap_content"
                         android:text="14,000,00"
                         android:textColor="@color/colorPrimaryDark"
-                        android:textSize="15dp" />
+                        android:textSize="15dp"
+                        android:id="@+id/tvUsedCarDetailsPrice"
+                        />
 
                 </LinearLayout>
             </LinearLayout>
@@ -193,6 +199,7 @@
                 android:layout_height="wrap_content"
                 android:background="@color/lightGray"
                 android:padding="10dp"
+               android:id="@+id/tvUsedCarDetailsDescrption"
                 android:text="Assuming u would use a linear layout(i have considered a vertical linear layout)..and have a view just below your linear layout.Now for this view provide a start colour and end colour.. I also wanted to get this thing,its working for me..If you need a even better effect,then just work around the start and end colour." />
             <TableLayout
                 android:layout_width="match_parent"
@@ -219,7 +226,9 @@
                             android:layout_height="wrap_content"
                             android:ems="10"
                             android:text="CarName"
-                            android:padding="5dp"/>
+                            android:padding="5dp"
+                            android:id="@+id/tvUsedCarDetailsNameTable"
+                            />
                     </LinearLayout>
                 </TableRow>
                 <View
@@ -255,7 +264,9 @@
                             android:layout_height="wrap_content"
                             android:ems="10"
                             android:padding="5dp"
-                            android:text="C180" />
+                            android:text="C180"
+                            android:id="@+id/tvUsedCarDetailsModel"
+                            />
                     </LinearLayout>
 
 
@@ -369,7 +380,10 @@
                             android:layout_height="wrap_content"
                             android:ems="10"
                             android:padding="5dp"
-                            android:text="2017" />
+                            android:text="2017"
+                            android:id="@+id/tvUsedCarDetailsYear"
+
+                            />
                     </LinearLayout>
 
 
@@ -485,7 +499,9 @@
                             android:ems="10"
                             android:text="14,000,000"
                             android:textColor="@color/lightBllue"
-                            android:padding="5dp"/>
+                            android:padding="5dp"
+                            android:id="@+id/tvUsedCarDetailsPriceTable"
+                            />
                     </LinearLayout>
 
 

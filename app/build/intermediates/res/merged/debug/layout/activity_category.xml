@@ -41,6 +41,7 @@
                     android:layout_gravity="center"
                     android:layout_weight="80"
                     android:gravity="center"
+                    android:id="@+id/carName"
                     android:text="CarName"
                     android:textColor="@color/white"
                     android:textSize="20dp"></TextView>
@@ -74,7 +75,13 @@
             android:src="@mipmap/ic_launcher" />
     </RelativeLayout>
 
+    <ExpandableListView
+        android:id="@+id/expandable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ExpandableListView>
+
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -83,10 +90,5 @@
         android:text="@string/enterChoiceCar"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="20dp"></TextView>
-
-    <ExpandableListView
-        android:id="@+id/expandable"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"></ExpandableListView>
 
 </LinearLayout>

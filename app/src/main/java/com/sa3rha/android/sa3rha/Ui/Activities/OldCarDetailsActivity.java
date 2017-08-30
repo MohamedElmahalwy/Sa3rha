@@ -1,12 +1,15 @@
 package com.sa3rha.android.sa3rha.Ui.Activities;
 
 import android.app.Dialog;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.media.Image;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.text.Html;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -15,11 +18,27 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
 import com.sa3rha.android.sa3rha.Controller.SliderPagerAdapter;
+import com.sa3rha.android.sa3rha.Models.UsedCar;
 import com.sa3rha.android.sa3rha.R;
 import com.sa3rha.android.sa3rha.Ui.BaseActivity;
+import com.sa3rha.android.sa3rha.Utilities.Constants;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Locale;
+import java.util.Map;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -35,30 +54,35 @@ public class OldCarDetailsActivity extends BaseActivity {
     ViewPager vp_slider;
     @BindView(R.id.LL_dots)
     LinearLayout ll_dots;
-    @BindView(R.id.IV_doCompare)
-    ImageView iv_doCompare;
     SliderPagerAdapter sliderPagerAdapter;
     Dialog dialog;
     //page position  belong to viewpager ImageView
     int page_position = 0;
     private TextView[] dots;
+    TextView tvUsedCarDetailsPrice, tvUsedCarDetailsDescrption, tvUsedCarDetailsName, tvUsedCarDetailsNameToolBar,
+            tvUsedCarDetailsNameTable, tvUsedCarDetailsPriceTable, tvUsedCarDetailsModel, tvUsedCarDetailsYear;
+    ArrayList<String> usedCarDetailsImages;
+    RequestQueue requestQueue;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_old_car_details);
+        requestQueue = Volley.newRequestQueue(this);
         ButterKnife.bind(this);
         init();
         addBottomDots(0);
-
+        getUsedCarDetails();
     }
 
     private void init() {
-        String CurrentLang= Locale.getDefault().getLanguage();
+        String CurrentLang = Locale.getDefault().getLanguage();
         if (CurrentLang == "ar") {
             iv_backHome.setImageResource(R.drawable.ic_arrow_forward_white_24dp);
         }
-       // viewpager ImageView
-        sliderPagerAdapter = new SliderPagerAdapter(this);
+        usedCarDetailsImages = new ArrayList<String>();
+        // viewpager ImageView
+        sliderPagerAdapter = new SliderPagerAdapter(this, usedCarDetailsImages);
         vp_slider.setAdapter(sliderPagerAdapter);
         vp_slider.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
@@ -76,12 +100,23 @@ public class OldCarDetailsActivity extends BaseActivity {
 
             }
         });
+
+
+        tvUsedCarDetailsPrice = (TextView) findViewById(R.id.tvUsedCarDetailsPrice);
+        tvUsedCarDetailsDescrption = (TextView) findViewById(R.id.tvUsedCarDetailsDescrption);
+        tvUsedCarDetailsName = (TextView) findViewById(R.id.tvUsedCarDetailsName);
+        tvUsedCarDetailsNameToolBar = (TextView) findViewById(R.id.tvUsedCarDetailsNameToolBar);
+        tvUsedCarDetailsNameTable = (TextView) findViewById(R.id.tvUsedCarDetailsNameTable);
+        tvUsedCarDetailsPriceTable = (TextView) findViewById(R.id.tvUsedCarDetailsPriceTable);
+        tvUsedCarDetailsModel = (TextView) findViewById(R.id.tvUsedCarDetailsModel);
+        tvUsedCarDetailsYear = (TextView) findViewById(R.id.tvUsedCarDetailsYear);
     }
+
     //dots of viewpager ImageView
     private void addBottomDots(int currentPage) {
-       // dots = new TextView[slider_image_list.size()];
-          dots=new TextView[4];
-           ll_dots.removeAllViews();
+        // dots = new TextView[slider_image_list.size()];
+        dots = new TextView[usedCarDetailsImages.size()];
+        ll_dots.removeAllViews();
         for (int i = 0; i < dots.length; i++) {
             dots[i] = new TextView(this);
             dots[i].setText(Html.fromHtml("&#8226;"));
@@ -93,12 +128,14 @@ public class OldCarDetailsActivity extends BaseActivity {
         if (dots.length > 0)
             dots[currentPage].setTextColor(Color.parseColor("#FFFFFF"));
     }
+
     @OnClick(R.id.IV_backHome)
-    public void backHome(){
-    finish();
+    public void backHome() {
+        finish();
     }
+
     @OnClick(R.id.IV_addToCompare)
-    public void addToCompar(){
+    public void addToCompar() {
         dialog = new Dialog(this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(R.layout.dialog_add_to_combare);
@@ -119,11 +156,76 @@ public class OldCarDetailsActivity extends BaseActivity {
         });
         dialog.show();
     }
-    @OnClick(R.id.IV_doCompare)
-    public void dpCmpare(){
-        startActivity(new Intent(OldCarDetailsActivity.this,CompareActivity.class));
-        overridePendingTransition(R.anim.enter_from_left, R.anim.exit_out_right);
+
+
+    //*****************************************************************************************************************************************
+    public void getUsedCarDetails() {
+        String url = Constants.API_LINK + "usedCars/getCarDetails";
+        JSONObject request = new JSONObject();
+        try {
+            request.put("carId", Integer.parseInt(getIntent().getStringExtra("carId")));
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, url, request, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                parseResponseJson(response);
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.e("volley", "error");
+            }
+        });
+        requestQueue.add(jsonObjectRequest);
     }
 
+    private void parseResponseJson(JSONObject response) {
+//        ProgressDialog pd = ProgressDialog.show(getApplicationContext(),null,"Please wait");
+//        if(pd!=null && pd.isShowing())
+//            pd.dismiss();
+        try {
+
+            JSONObject jsonObject = response.getJSONObject("data");
+            String usedCarPrice = jsonObject.getString("usedCarPrice");
+            tvUsedCarDetailsPrice.setText(usedCarPrice);
+            tvUsedCarDetailsPriceTable.setText(usedCarPrice);
+
+            String usedCarDescrption = jsonObject.getString("usedCarDescription");
+            tvUsedCarDetailsDescrption.setText(usedCarDescrption);
+
+            String usedCarModel = jsonObject.getString("usedCarModel");
+            tvUsedCarDetailsModel.setText(usedCarModel);
+
+            String usedCarYear = jsonObject.getString("usedCarYear");
+            tvUsedCarDetailsYear.setText(usedCarYear);
+
+            JSONArray images = jsonObject.getJSONArray("images");
+
+
+            for (int i = 0; i < images.length(); i++) {
+
+
+                JSONObject usedCarImages = images.getJSONObject(i);
+                String imageTitle = usedCarImages.getString("imageTitle");
+                usedCarDetailsImages.add(imageTitle);
+
+//                System.out.println(usedCarDetailsImages.size());
+
+            }
+
+            JSONObject sub_brand = jsonObject.getJSONObject("sub_brand");
+            String subBrandTitle = sub_brand.getString("subBrandTitle");
+            tvUsedCarDetailsName.setText(subBrandTitle);
+            tvUsedCarDetailsNameToolBar.setText(subBrandTitle);
+            tvUsedCarDetailsNameTable.setText(subBrandTitle);
+
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        sliderPagerAdapter.notifyDataSetChanged();
+    }
 
 }

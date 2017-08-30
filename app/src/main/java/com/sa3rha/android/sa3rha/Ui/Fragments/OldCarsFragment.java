@@ -1,6 +1,7 @@
 package com.sa3rha.android.sa3rha.Ui.Fragments;
 
 import android.app.Dialog;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -18,6 +19,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.VideoView;
 
 import com.android.volley.Request;
@@ -30,6 +32,7 @@ import com.sa3rha.android.sa3rha.Models.UsedCar;
 import com.sa3rha.android.sa3rha.Ui.Activities.Add_used_car_activity;
 import com.sa3rha.android.sa3rha.Controller.OldCarAdapter;
 import com.sa3rha.android.sa3rha.R;
+import com.sa3rha.android.sa3rha.Ui.Activities.OldCarDetailsActivity;
 import com.sa3rha.android.sa3rha.Utilities.Constants;
 
 import org.json.JSONArray;
@@ -43,10 +46,13 @@ public class OldCarsFragment extends Fragment {
     RecyclerView rv_oldCar;
     OldCarAdapter adapter;
     ImageView iv_addToCompare;
+
     FloatingActionButton fab_addUsedCar;
     Dialog dialog;
     RequestQueue requestQueue;
+
     ArrayList<UsedCar> usedCarArrayList;
+    ArrayList<String> usedCarIdArrayList;
 
     public OldCarsFragment() {
         // Required empty public constructor
@@ -65,6 +71,7 @@ public class OldCarsFragment extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_old_car, container, false);
         usedCarArrayList = new ArrayList<>();
+        usedCarIdArrayList = new ArrayList<>();
         init(v);
         //using fixed id
         getOldCars(2);
@@ -82,7 +89,6 @@ public class OldCarsFragment extends Fragment {
             }
         });
         rv_oldCar.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayout.VERTICAL, false));
-
     }
 
     private void addToCompar() {
@@ -109,41 +115,13 @@ public class OldCarsFragment extends Fragment {
 
     //*************************************************************************************************************//
 //using fixed id
-    public void getOldCars(int id) {
+    public void getOldCars(final int id) {
         String url = Constants.API_LINK + "usedCars?brandId=" + id;
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
-                try {
-                    JSONArray jsonArray = response.getJSONArray("data");
-                    for (int i = 0; i < jsonArray.length(); i++) {
-                        JSONObject usedCar = jsonArray.getJSONObject(i);
-                        String carName = usedCar.getString("subBrandTitle");
-                        String usedCarPrice = usedCar.getString("usedCarPrice");
-                        String usedCarImgs = usedCar.getString("carImgs");
-                        String img = null;
-                        if (!usedCarImgs.contains("null")) {
+                parseResponseJson(response);
 
-                            String[] items = usedCarImgs.split(",");
-//                        for (String item : items)
-//                        {
-//                            System.out.println("item = " + item);
-//                        }
-                            img = items[0];
-
-                            System.out.println(items[0]);
-
-                        }
-                        UsedCar usedCar1 = new UsedCar(carName, usedCarPrice, img);
-                        usedCarArrayList.add(usedCar1);
-
-
-                    }
-                    adapter = new OldCarAdapter(getActivity(), usedCarArrayList);
-                    rv_oldCar.setAdapter(adapter);
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
             }
         }, new Response.ErrorListener() {
             @Override
@@ -152,6 +130,63 @@ public class OldCarsFragment extends Fragment {
             }
         });
         requestQueue.add(jsonObjectRequest);
+    }
+
+
+    private void parseResponseJson(JSONObject response) {
+        ProgressDialog pd = ProgressDialog.show(getContext(), null, "Please wait");
+        if (pd != null && pd.isShowing())
+            pd.dismiss();
+        try {
+
+            String usedCarImgs = null;
+            String usedCarId = null;
+            JSONArray jsonArray = response.getJSONArray("data");
+            for (int i = 0; i < jsonArray.length(); i++) {
+                UsedCar usedCar1 = new UsedCar();
+                JSONObject usedCar = jsonArray.getJSONObject(i);
+                usedCar1.setCarName(usedCar.getString("subBrandTitle"));
+                usedCar1.setCarPrice(usedCar.getString("usedCarPrice"));
+                usedCar1.setUsedId(usedCar.getString("usedCarId"));
+
+                usedCarImgs = usedCar.getString("carImgs");
+
+
+                String img = null;
+                if (!usedCarImgs.contains("null")) {
+
+                    String[] items = usedCarImgs.split(",");
+//                        for (String item : items)
+//                        {
+//                            System.out.println("item = " + item);
+//                        }
+                    img = items[0];
+
+
+                    usedCar1.setCarImage(img);
+
+                    System.out.println(items[0]);
+
+
+                }
+
+                usedCarArrayList.add(usedCar1);
+
+
+            }
+
+            setRecyclerAdapter();
+
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    private void setRecyclerAdapter() {
+        adapter = new OldCarAdapter(getActivity(), usedCarArrayList);
+        rv_oldCar.setAdapter(adapter);
     }
 
 }

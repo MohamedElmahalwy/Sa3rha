@@ -7,19 +7,23 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.sa3rha.android.sa3rha.Models.UsedCar;
 import com.sa3rha.android.sa3rha.R;
+import com.sa3rha.android.sa3rha.Utilities.Constants;
 import com.squareup.picasso.Picasso;
+
+import java.util.ArrayList;
 
 public class SliderPagerAdapter extends PagerAdapter {
     Context context;
-  //  ArrayList<String> image_arraylist;
+    ArrayList<String> image_arraylist;
     LayoutInflater layoutInflater;
 
     // public SliderPagerAdapter(Context  context, ArrayList<String> image_arraylist)
-    public SliderPagerAdapter(Context  context) {
-        this. context =  context;
-       // this.image_arraylist = image_arraylist;
-        layoutInflater = (LayoutInflater)  context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+    public SliderPagerAdapter(Context context, ArrayList<String> image_arraylist) {
+        this.context = context;
+        this.image_arraylist = image_arraylist;
+        layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
     @Override
@@ -27,7 +31,7 @@ public class SliderPagerAdapter extends PagerAdapter {
         View view = layoutInflater.inflate(R.layout.layout_slider, container, false);
         ImageView im_slider = (ImageView) view.findViewById(R.id.im_slider);
         Picasso.with(context.getApplicationContext())
-                .load(R.mipmap.ic_launcher)
+                .load(Constants.MEDIA_LINK + Constants.CarsImages + image_arraylist.get(position).toString())
                 .placeholder(R.mipmap.ic_launcher) // optional
                 .error(R.mipmap.ic_launcher)         // optional
                 .into(im_slider);
@@ -37,8 +41,8 @@ public class SliderPagerAdapter extends PagerAdapter {
 
     @Override
     public int getCount() {
-        //return image_arraylist.size();
-        return 4;
+        return image_arraylist.size();
+//        return 4;
     }
 
 

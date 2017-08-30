@@ -24,7 +24,7 @@ public class BaseActivity extends AppCompatActivity {
         applyAppFont();
     }
 
-    @Override
+@Override
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }

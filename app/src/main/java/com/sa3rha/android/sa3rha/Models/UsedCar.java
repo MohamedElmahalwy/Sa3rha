@@ -4,16 +4,36 @@ package com.sa3rha.android.sa3rha.Models;
  * Created by cz on 20/08/17.
  */
 
-public class UsedCar extends Car {
-    String carName,carPrice,carImage;
+public class UsedCar  {
+    String carName;
+    String carPrice;
+    String carImage;
 
-
-
-    public UsedCar(String carName, String carPrice, String carImage) {
+    public void setCarName(String carName) {
         this.carName = carName;
-        this.carPrice=carPrice;
-        this.carImage=carImage;
     }
+
+    public void setCarPrice(String carPrice) {
+        this.carPrice = carPrice;
+    }
+
+    public void setCarImage(String carImage) {
+        this.carImage = carImage;
+    }
+
+    public String getUsedId() {
+        return UsedId;
+    }
+
+    public void setUsedId(String usedId) {
+        UsedId = usedId;
+    }
+
+    String UsedId;
+
+
+
+
 
     public String getCarName() {
         return carName;
