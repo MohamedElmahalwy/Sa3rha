@@ -11,7 +11,7 @@ import java.util.List;
  * Created by Mohamed Hefny on 8/18/2017.
  */
 
-public class MainPagerAdapter extends FragmentPagerAdapter {
+public class MainPagerAdapter extends FragmentPagerAdapter{
 
     private final List<Fragment> mFragmentList = new ArrayList<>();
     private final List<String> mFragmentTitleList = new ArrayList<>();

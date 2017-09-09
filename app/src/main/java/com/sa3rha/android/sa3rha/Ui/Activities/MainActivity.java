@@ -1,9 +1,12 @@
 package com.sa3rha.android.sa3rha.Ui.Activities;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
+import android.view.View;
+import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -40,11 +43,6 @@ public class MainActivity extends BaseActivity {
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
         ButterKnife.bind(this);
         setupViewPager(viewPager);
-        tabLayout.setupWithViewPager(viewPager);
-        init();
-    }
-
-    private void init() {
     }
 
     private void setupViewPager(ViewPager viewPager) {
@@ -52,6 +50,13 @@ public class MainActivity extends BaseActivity {
         adapter.addFrag(new OldCarsFragment(), getString(R.string.oldCar));
         adapter.addFrag(new NewBrandsFragment(), getString(R.string.newCar));
         viewPager.setAdapter(adapter);
+
+        tabLayout.setupWithViewPager(viewPager);
+        //Set NewBrandsFragment the main selected item in the start
+        TabLayout.Tab newBrandsTab = tabLayout.getTabAt(1);
+        newBrandsTab.select();
+        viewPager.setCurrentItem(1);
+        changeTabsFont();
     }
 
     @OnClick(R.id.Linear_ContainerOfSearchBox)
@@ -64,8 +69,23 @@ public class MainActivity extends BaseActivity {
     public void doSearch2(){
         startActivity(new Intent(this,serachActivity.class));
         overridePendingTransition(R.anim.slide_down,R.anim.slide_up);
-
     }
 
-
+    /**
+     * This method is to change tabs indicators text font
+     */
+    void changeTabsFont() {
+        ViewGroup tabsViewGroup = (ViewGroup) tabLayout.getChildAt(0);
+        byte tabsCount = (byte) tabsViewGroup.getChildCount();
+        for (byte j = 0; j < tabsCount; j++) {
+            ViewGroup vgTab = (ViewGroup) tabsViewGroup.getChildAt(j);
+            int tabChildrenCount = vgTab.getChildCount();
+            for (int i = 0; i < tabChildrenCount; i++) {
+                View tabViewChild = vgTab.getChildAt(i);
+                if (tabViewChild instanceof TextView) {
+                    ((TextView) tabViewChild).setTypeface(Typeface.createFromAsset(getAssets(), "fonts/Cairo-Bold.ttf"));
+                }
+            }
+        }
+    }
 }

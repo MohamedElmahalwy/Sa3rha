@@ -45,8 +45,7 @@ public class Add_used_car_activity extends BaseActivity {
         ButterKnife.bind(this);
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
         uriList = new ArrayList<>();
-        init();
-
+        //init();
     }
 
     private void init() {

@@ -1,11 +1,8 @@
 package com.sa3rha.android.sa3rha.Ui.Activities;
 
 import android.app.Dialog;
-import android.app.ProgressDialog;
-import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.media.Image;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.text.Html;
@@ -18,7 +15,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -26,7 +22,6 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.sa3rha.android.sa3rha.Controller.SliderPagerAdapter;
-import com.sa3rha.android.sa3rha.Models.UsedCar;
 import com.sa3rha.android.sa3rha.R;
 import com.sa3rha.android.sa3rha.Ui.BaseActivity;
 import com.sa3rha.android.sa3rha.Utilities.Constants;
@@ -36,9 +31,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Locale;
-import java.util.Map;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -59,7 +52,7 @@ public class OldCarDetailsActivity extends BaseActivity {
     //page position  belong to viewpager ImageView
     int page_position = 0;
     private TextView[] dots;
-    TextView tvUsedCarDetailsPrice, tvUsedCarDetailsDescrption, tvUsedCarDetailsName, tvUsedCarDetailsNameToolBar,
+    TextView tvUsedCarDetailsPrice, tvUsedCarDetailsDescription, tvUsedCarDetailsName, tvUsedCarDetailsNameToolBar,
             tvUsedCarDetailsNameTable, tvUsedCarDetailsPriceTable, tvUsedCarDetailsModel, tvUsedCarDetailsYear;
     ArrayList<String> usedCarDetailsImages;
     RequestQueue requestQueue;
@@ -76,10 +69,10 @@ public class OldCarDetailsActivity extends BaseActivity {
     }
 
     private void init() {
-        String CurrentLang = Locale.getDefault().getLanguage();
-        if (CurrentLang == "ar") {
-            iv_backHome.setImageResource(R.drawable.ic_arrow_forward_white_24dp);
-        }
+//        String CurrentLang = Locale.getDefault().getLanguage();
+//        if (CurrentLang == "ar") {
+//            iv_backHome.setImageResource(R.drawable.ic_arrow_forward_white_24dp);
+//        }
         usedCarDetailsImages = new ArrayList<String>();
         // viewpager ImageView
         sliderPagerAdapter = new SliderPagerAdapter(this, usedCarDetailsImages);
@@ -103,7 +96,7 @@ public class OldCarDetailsActivity extends BaseActivity {
 
 
         tvUsedCarDetailsPrice = (TextView) findViewById(R.id.tvUsedCarDetailsPrice);
-        tvUsedCarDetailsDescrption = (TextView) findViewById(R.id.tvUsedCarDetailsDescrption);
+        tvUsedCarDetailsDescription = (TextView) findViewById(R.id.tvUsedCarDetailsDescription);
         tvUsedCarDetailsName = (TextView) findViewById(R.id.tvUsedCarDetailsName);
         tvUsedCarDetailsNameToolBar = (TextView) findViewById(R.id.tvUsedCarDetailsNameToolBar);
         tvUsedCarDetailsNameTable = (TextView) findViewById(R.id.tvUsedCarDetailsNameTable);
@@ -167,17 +160,20 @@ public class OldCarDetailsActivity extends BaseActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, url, request, new Response.Listener<JSONObject>() {
-            @Override
-            public void onResponse(JSONObject response) {
-                parseResponseJson(response);
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                Log.e("volley", "error");
-            }
-        });
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, url, request,
+                new Response.Listener<JSONObject>() {
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        parseResponseJson(response);
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        Log.e("volley", "error");
+                    }
+                });
+
         requestQueue.add(jsonObjectRequest);
     }
 
@@ -186,14 +182,13 @@ public class OldCarDetailsActivity extends BaseActivity {
 //        if(pd!=null && pd.isShowing())
 //            pd.dismiss();
         try {
-
             JSONObject jsonObject = response.getJSONObject("data");
             String usedCarPrice = jsonObject.getString("usedCarPrice");
             tvUsedCarDetailsPrice.setText(usedCarPrice);
             tvUsedCarDetailsPriceTable.setText(usedCarPrice);
 
-            String usedCarDescrption = jsonObject.getString("usedCarDescription");
-            tvUsedCarDetailsDescrption.setText(usedCarDescrption);
+            String usedCarDescription = jsonObject.getString("usedCarDescription");
+            tvUsedCarDetailsDescription.setText(usedCarDescription);
 
             String usedCarModel = jsonObject.getString("usedCarModel");
             tvUsedCarDetailsModel.setText(usedCarModel);
@@ -203,16 +198,10 @@ public class OldCarDetailsActivity extends BaseActivity {
 
             JSONArray images = jsonObject.getJSONArray("images");
 
-
             for (int i = 0; i < images.length(); i++) {
-
-
                 JSONObject usedCarImages = images.getJSONObject(i);
                 String imageTitle = usedCarImages.getString("imageTitle");
                 usedCarDetailsImages.add(imageTitle);
-
-//                System.out.println(usedCarDetailsImages.size());
-
             }
 
             JSONObject sub_brand = jsonObject.getJSONObject("sub_brand");
@@ -220,7 +209,6 @@ public class OldCarDetailsActivity extends BaseActivity {
             tvUsedCarDetailsName.setText(subBrandTitle);
             tvUsedCarDetailsNameToolBar.setText(subBrandTitle);
             tvUsedCarDetailsNameTable.setText(subBrandTitle);
-
 
         } catch (JSONException e) {
             e.printStackTrace();

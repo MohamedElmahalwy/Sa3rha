@@ -66,10 +66,6 @@ public class NewCarDetailsActivity extends YouTubeBaseActivity implements YouTub
     }
 
     private void init() {
-        String CurrentLang= Locale.getDefault().getLanguage();
-        if (CurrentLang == "ar") {
-            iv_backHome.setImageResource(R.drawable.ic_arrow_forward_white_24dp);
-        }
         btn_installment_offer.setOnClickListener(this);
         btn_insurance_offer.setOnClickListener(this);
         btn_shading_offer.setOnClickListener(this);
@@ -230,6 +226,4 @@ public class NewCarDetailsActivity extends YouTubeBaseActivity implements YouTub
         dialog.show();
 
     }
-
-
 }

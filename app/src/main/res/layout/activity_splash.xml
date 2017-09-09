@@ -1,54 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/group"
+    android:orientation="vertical"
     tools:context=".Ui.Activities.SplashActivity">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:src="@mipmap/logo_copy"
-        android:layout_marginTop="169dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="160dp"
+        android:src="@drawable/sa3rha_logo" />
 
-        android:rotation="-90"
-        />
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
         android:layout_gravity="center"
-        >
+        android:layout_marginTop="100dp">
 
         <Button
             android:id="@+id/BTN_english"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="25dp"
             android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
             android:background="@drawable/border_style"
             android:text="@string/EnglishLanguage"
-            android:textColor="@color/colorPrimaryDark"
-            ></Button>
+            android:textColor="@color/colorPrimaryDark"></Button>
 
         <Button
+            android:id="@+id/BTN_arabic"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimaryDark"
-            android:textColor="@color/white"
-            android:text="@string/ArabicLanguage"
-            android:id="@+id/BTN_arabic"
-            android:layout_marginRight="25dp"
             android:layout_marginLeft="25dp"
-
-           />
-
+            android:layout_marginRight="25dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/ArabicLanguage"
+            android:textColor="@color/white" />
     </LinearLayout>
-
 
 </LinearLayout>

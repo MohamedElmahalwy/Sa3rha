@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/white"
+    android:orientation="vertical"
     tools:context=".Ui.Activities.OldCarDetailsActivity">
 
     <android.support.design.widget.AppBarLayout
@@ -18,47 +18,44 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            app:popupTheme="@style/AppTheme.PopupOverlay">
 
             <LinearLayout
+                android:id="@+id/Linear_ContainerOfSearchBox"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:gravity="center"
-                android:id="@+id/Linear_ContainerOfSearchBox"
+                android:orientation="horizontal">
 
-                >
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_arrow_back_white_24dp"
-                    android:padding="10dp"
                     android:id="@+id/IV_backHome"
-                    ></ImageView>
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_arrow_back_white_24dp"></ImageView>
+
                 <TextView
+                    android:id="@+id/tvUsedCarDetailsNameToolBar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="80"
-                    android:textSize="20dp"
-                    android:textColor="@color/white"
-                    android:text="CarName"
                     android:gravity="center"
-                    android:id="@+id/tvUsedCarDetailsNameToolBar"
-                    ></TextView>
+                    android:textColor="@color/white"
+                    android:textSize="20dp"></TextView>
+
                 <ImageView
                     android:id="@+id/IV_doCompare"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="10dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"
                     android:src="@drawable/combined_shape"></ImageView>
 
 
             </LinearLayout>
         </android.support.v7.widget.Toolbar>
-
 
     </android.support.design.widget.AppBarLayout>
 
@@ -70,18 +67,21 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
-                android:layout_marginTop="10dp"
-                >
+                android:layout_marginTop="10dp">
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="300dp">
+
                     <android.support.v4.view.ViewPager
                         android:id="@+id/vp_slider"
                         android:layout_width="match_parent"
                         android:layout_height="300dp" />
+
                     <LinearLayout
                         android:id="@+id/LL_dots"
                         android:layout_width="match_parent"
@@ -91,6 +91,7 @@
                         android:gravity="center"
                         android:orientation="horizontal"></LinearLayout>
                 </RelativeLayout>
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -131,16 +132,16 @@
 
                 </LinearLayout>
             </FrameLayout>
+
             <TextView
+                android:id="@+id/tvUsedCarDetailsName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
                 android:gravity="center"
                 android:padding="10dp"
-                android:text="CarName"
-                android:textSize="20dp"
-                android:id="@+id/tvUsedCarDetailsName"
-                />
+                android:textSize="20dp" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -153,9 +154,9 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
                     android:layout_gravity="center"
-                    >
+                    android:orientation="horizontal">
+
                     <TextView
 
                         android:layout_width="wrap_content"
@@ -184,32 +185,31 @@
                         android:textSize="15dp" />
 
                     <TextView
+                        android:id="@+id/tvUsedCarDetailsPrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="14,000,00"
                         android:textColor="@color/colorPrimaryDark"
-                        android:textSize="15dp"
-                        android:id="@+id/tvUsedCarDetailsPrice"
-                        />
+                        android:textSize="15dp" />
 
                 </LinearLayout>
             </LinearLayout>
+
             <TextView
+                android:id="@+id/tvUsedCarDetailsDescription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/lightGray"
-                android:padding="10dp"
-               android:id="@+id/tvUsedCarDetailsDescrption"
-                android:text="Assuming u would use a linear layout(i have considered a vertical linear layout)..and have a view just below your linear layout.Now for this view provide a start colour and end colour.. I also wanted to get this thing,its working for me..If you need a even better effect,then just work around the start and end colour." />
+                android:padding="10dp" />
+
             <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/lightGray"
-                >
+                android:background="@color/lightGray">
+
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    >
+                    android:layout_height="wrap_content">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
@@ -222,19 +222,19 @@
                             android:text="Mark" />
 
                         <TextView
+                            android:id="@+id/tvUsedCarDetailsNameTable"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:ems="10"
-                            android:text="CarName"
-                            android:padding="5dp"
-                            android:id="@+id/tvUsedCarDetailsNameTable"
-                            />
+                            android:padding="5dp" />
                     </LinearLayout>
                 </TableRow>
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="@color/lightGray2" />
+
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
@@ -255,26 +255,24 @@
                         <View
                             android:layout_width="1dp"
                             android:layout_height="match_parent"
-                            android:background="@color/lightGray2"
-
-                            />
+                            android:background="@color/lightGray2" />
 
                         <TextView
+                            android:id="@+id/tvUsedCarDetailsModel"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:ems="10"
-                            android:padding="5dp"
-                            android:text="C180"
-                            android:id="@+id/tvUsedCarDetailsModel"
-                            />
+                            android:padding="5dp" />
                     </LinearLayout>
 
 
                 </TableRow>
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="@color/lightGray2" />
+
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
@@ -295,24 +293,23 @@
                         <View
                             android:layout_width="1dp"
                             android:layout_height="match_parent"
-                            android:background="@color/lightGray2"
-
-                            />
+                            android:background="@color/lightGray2" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:ems="10"
-                            android:padding="5dp"
-                            android:text="AVANTAGARDE" />
+                            android:padding="5dp" />
                     </LinearLayout>
 
 
                 </TableRow>
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="@color/lightGray2" />
+
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
@@ -333,24 +330,23 @@
                         <View
                             android:layout_width="1dp"
                             android:layout_height="match_parent"
-                            android:background="@color/lightGray2"
-
-                            />
+                            android:background="@color/lightGray2" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:ems="10"
-                            android:padding="5dp"
-                            android:text="W20TG45" />
+                            android:padding="5dp" />
                     </LinearLayout>
 
 
                 </TableRow>
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="@color/lightGray2" />
+
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
@@ -371,27 +367,25 @@
                         <View
                             android:layout_width="1dp"
                             android:layout_height="match_parent"
-                            android:background="@color/lightGray2"
-
-                            />
+                            android:background="@color/lightGray2" />
 
                         <TextView
+                            android:id="@+id/tvUsedCarDetailsYear"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:ems="10"
-                            android:padding="5dp"
-                            android:text="2017"
-                            android:id="@+id/tvUsedCarDetailsYear"
+                            android:padding="5dp" />
 
-                            />
                     </LinearLayout>
 
 
                 </TableRow>
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="@color/lightGray2" />
+
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
@@ -412,24 +406,23 @@
                         <View
                             android:layout_width="1dp"
                             android:layout_height="match_parent"
-                            android:background="@color/lightGray2"
-
-                            />
+                            android:background="@color/lightGray2" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:ems="10"
-                            android:padding="5dp"
-                            android:text="WD455 " />
+                            android:padding="5dp" />
                     </LinearLayout>
 
 
                 </TableRow>
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="@color/lightGray2" />
+
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
@@ -450,20 +443,18 @@
                         <View
                             android:layout_width="1dp"
                             android:layout_height="match_parent"
-                            android:background="@color/lightGray2"
-
-                            />
+                            android:background="@color/lightGray2" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:ems="10"
-                            android:text="4"
-                            android:padding="5dp"/>
+                            android:padding="5dp" />
                     </LinearLayout>
 
 
                 </TableRow>
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -489,33 +480,27 @@
                         <View
                             android:layout_width="1dp"
                             android:layout_height="match_parent"
-                            android:background="@color/lightGray2"
-
-                            />
+                            android:background="@color/lightGray2" />
 
                         <TextView
+                            android:id="@+id/tvUsedCarDetailsPriceTable"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:ems="10"
-                            android:text="14,000,000"
-                            android:textColor="@color/lightBllue"
                             android:padding="5dp"
-                            android:id="@+id/tvUsedCarDetailsPriceTable"
-                            />
+                            android:textColor="@color/lightBllue" />
                     </LinearLayout>
 
 
                 </TableRow>
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="@color/lightGray2" />
 
-
-
-
-
             </TableLayout>
+
             <TextView
                 android:id="@+id/textView7"
                 android:layout_width="match_parent"
@@ -525,20 +510,19 @@
                 android:text="@string/CarOwnerData"
                 android:textColor="@color/lightBllue"
                 android:textSize="20dp" />
+
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-
-                >
+                android:layout_height="wrap_content">
 
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/circleImageView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
                     android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
                     android:layout_marginStart="51dp"
-                    android:padding="10dp"
                     android:src="@drawable/call_answer" />
 
                 <TextView
@@ -546,33 +530,34 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
                     android:layout_toEndOf="@+id/circleImageView"
-                    android:text="016156154" />
+                    android:text="لا يتوفر رقم هاتف" />
 
                 <TextView
+                    android:id="@+id/textView6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:layout_marginStart="20dp"
-                    android:layout_toEndOf="@+id/textView4"
-                    android:text="OwnerName"
-                    android:id="@+id/textView6" />
+                    android:layout_marginStart="15dp"
+                    android:layout_toEndOf="@+id/textView4" />
 
                 <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="10dp"
-                    android:src="@drawable/profile_picture"
-                    android:layout_alignParentTop="true"
-                    android:layout_toEndOf="@+id/textView6" />
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/textView6"
+                    android:src="@drawable/profile_picture" />
 
             </RelativeLayout>
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
-                android:background="@color/lightGray"
                 android:layout_marginTop="10dp"
-                />
+                android:background="@color/lightGray" />
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -581,9 +566,9 @@
                 android:layout_weight="30"
                 android:background="@color/lightBllue"
                 android:text="@string/MakeOrdernow"
-                android:textColor="@color/white"
-               android:textSize="20dp"
                 android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20dp"
 
                 />
 

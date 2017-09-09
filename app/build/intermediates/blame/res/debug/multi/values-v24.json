@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\cz\\AndroidStudioProjects\\Sa3rha\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
+        "outputFile": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 207
                 },
                 "from": {
-                    "file": "C:\\Users\\cz\\.android\\build-cache\\ec6210953d4263697a7b637d380fccb3b349332e\\output\\res\\values-v24\\values-v24.xml",
+                    "file": "C:\\Users\\Mohamed Hefny\\.android\\build-cache\\75a1e15d27a353e47dfc037eac094dbb2d218fba\\output\\res\\values-v24\\values-v24.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 342
                 },
                 "from": {
-                    "file": "C:\\Users\\cz\\.android\\build-cache\\ec6210953d4263697a7b637d380fccb3b349332e\\output\\res\\values-v24\\values-v24.xml",
+                    "file": "C:\\Users\\Mohamed Hefny\\.android\\build-cache\\75a1e15d27a353e47dfc037eac094dbb2d218fba\\output\\res\\values-v24\\values-v24.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -49,7 +49,7 @@
                     "endOffset": 411
                 },
                 "from": {
-                    "file": "C:\\Users\\cz\\.android\\build-cache\\ec6210953d4263697a7b637d380fccb3b349332e\\output\\res\\values-v24\\values-v24.xml",
+                    "file": "C:\\Users\\Mohamed Hefny\\.android\\build-cache\\75a1e15d27a353e47dfc037eac094dbb2d218fba\\output\\res\\values-v24\\values-v24.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -68,7 +68,7 @@
                     "endOffset": 475
                 },
                 "from": {
-                    "file": "C:\\Users\\cz\\.android\\build-cache\\ec6210953d4263697a7b637d380fccb3b349332e\\output\\res\\values-v24\\values-v24.xml",
+                    "file": "C:\\Users\\Mohamed Hefny\\.android\\build-cache\\75a1e15d27a353e47dfc037eac094dbb2d218fba\\output\\res\\values-v24\\values-v24.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -87,7 +87,7 @@
                     "endOffset": 544
                 },
                 "from": {
-                    "file": "C:\\Users\\cz\\.android\\build-cache\\ec6210953d4263697a7b637d380fccb3b349332e\\output\\res\\values-v24\\values-v24.xml",
+                    "file": "C:\\Users\\Mohamed Hefny\\.android\\build-cache\\75a1e15d27a353e47dfc037eac094dbb2d218fba\\output\\res\\values-v24\\values-v24.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -106,7 +106,7 @@
                     "endOffset": 614
                 },
                 "from": {
-                    "file": "C:\\Users\\cz\\.android\\build-cache\\ec6210953d4263697a7b637d380fccb3b349332e\\output\\res\\values-v24\\values-v24.xml",
+                    "file": "C:\\Users\\Mohamed Hefny\\.android\\build-cache\\75a1e15d27a353e47dfc037eac094dbb2d218fba\\output\\res\\values-v24\\values-v24.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,

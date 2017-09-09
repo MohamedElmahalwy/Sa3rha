@@ -1,10 +1,14 @@
 [
     {
-        "merged": "E:\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher_round.png",
-        "source": "E:\\Sa3rha\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+        "merged": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
+        "source": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "E:\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
-        "source": "E:\\Sa3rha\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher_round.png",
+        "source": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\logo.png",
+        "source": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\src\\main\\res\\mipmap-xxhdpi\\logo.png"
     }
 ]

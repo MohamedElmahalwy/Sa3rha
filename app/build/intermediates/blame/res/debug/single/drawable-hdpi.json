@@ -1,61 +1,5 @@
 [
     {
-<<<<<<< Updated upstream
-        "merged": "C:\\Users\\cz\\AndroidStudioProjects\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\profile_picture.png",
-        "source": "C:\\Users\\cz\\AndroidStudioProjects\\Sa3rha\\app\\src\\main\\res\\drawable-hdpi\\profile_picture.png"
-    },
-    {
-        "merged": "C:\\Users\\cz\\AndroidStudioProjects\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_note_add_white_48dp.png",
-        "source": "C:\\Users\\cz\\AndroidStudioProjects\\Sa3rha\\app\\src\\main\\res\\drawable-hdpi\\ic_note_add_white_48dp.png"
-    },
-    {
-        "merged": "C:\\Users\\cz\\AndroidStudioProjects\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_clear_black_24dp.png",
-        "source": "C:\\Users\\cz\\AndroidStudioProjects\\Sa3rha\\app\\src\\main\\res\\drawable-hdpi\\ic_clear_black_24dp.png"
-    },
-    {
-        "merged": "C:\\Users\\cz\\AndroidStudioProjects\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_add_white_24dp.png",
-        "source": "C:\\Users\\cz\\AndroidStudioProjects\\Sa3rha\\app\\src\\main\\res\\drawable-hdpi\\ic_add_white_24dp.png"
-    },
-    {
-        "merged": "C:\\Users\\cz\\AndroidStudioProjects\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\bg_video.png",
-        "source": "C:\\Users\\cz\\AndroidStudioProjects\\Sa3rha\\app\\src\\main\\res\\drawable-hdpi\\bg_video.png"
-    },
-    {
-        "merged": "C:\\Users\\cz\\AndroidStudioProjects\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_search_black_24dp.png",
-        "source": "C:\\Users\\cz\\AndroidStudioProjects\\Sa3rha\\app\\src\\main\\res\\drawable-hdpi\\ic_search_black_24dp.png"
-    },
-    {
-        "merged": "C:\\Users\\cz\\AndroidStudioProjects\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_play_circle_filled_white_48dp.png",
-        "source": "C:\\Users\\cz\\AndroidStudioProjects\\Sa3rha\\app\\src\\main\\res\\drawable-hdpi\\ic_play_circle_filled_white_48dp.png"
-    },
-    {
-        "merged": "C:\\Users\\cz\\AndroidStudioProjects\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\combined_shape.png",
-        "source": "C:\\Users\\cz\\AndroidStudioProjects\\Sa3rha\\app\\src\\main\\res\\drawable-hdpi\\combined_shape.png"
-    },
-    {
-        "merged": "C:\\Users\\cz\\AndroidStudioProjects\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_arrow_forward_white_24dp.png",
-        "source": "C:\\Users\\cz\\AndroidStudioProjects\\Sa3rha\\app\\src\\main\\res\\drawable-hdpi\\ic_arrow_forward_white_24dp.png"
-    },
-    {
-        "merged": "C:\\Users\\cz\\AndroidStudioProjects\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\done.png",
-        "source": "C:\\Users\\cz\\AndroidStudioProjects\\Sa3rha\\app\\src\\main\\res\\drawable-hdpi\\done.png"
-    },
-    {
-        "merged": "C:\\Users\\cz\\AndroidStudioProjects\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\group.png",
-        "source": "C:\\Users\\cz\\AndroidStudioProjects\\Sa3rha\\app\\src\\main\\res\\drawable-hdpi\\group.png"
-    },
-    {
-        "merged": "C:\\Users\\cz\\AndroidStudioProjects\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\call_answer.png",
-        "source": "C:\\Users\\cz\\AndroidStudioProjects\\Sa3rha\\app\\src\\main\\res\\drawable-hdpi\\call_answer.png"
-    },
-    {
-        "merged": "C:\\Users\\cz\\AndroidStudioProjects\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\add_compare.png",
-        "source": "C:\\Users\\cz\\AndroidStudioProjects\\Sa3rha\\app\\src\\main\\res\\drawable-hdpi\\add_compare.png"
-    },
-    {
-        "merged": "C:\\Users\\cz\\AndroidStudioProjects\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_arrow_back_white_24dp.png",
-        "source": "C:\\Users\\cz\\AndroidStudioProjects\\Sa3rha\\app\\src\\main\\res\\drawable-hdpi\\ic_arrow_back_white_24dp.png"
-=======
         "merged": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_arrow_back_white_24dp.png",
         "source": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\src\\main\\res\\drawable-hdpi\\ic_arrow_back_white_24dp.png"
     },
@@ -110,6 +54,5 @@
     {
         "merged": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_play_circle_filled_white_48dp.png",
         "source": "D:\\Android\\Mobi Projects\\Sa3erha\\Sa3rha\\app\\src\\main\\res\\drawable-hdpi\\ic_play_circle_filled_white_48dp.png"
->>>>>>> Stashed changes
     }
 ]

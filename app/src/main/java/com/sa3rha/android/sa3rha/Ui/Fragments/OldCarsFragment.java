@@ -46,11 +46,9 @@ public class OldCarsFragment extends Fragment {
     RecyclerView rv_oldCar;
     OldCarAdapter adapter;
     ImageView iv_addToCompare;
-
     FloatingActionButton fab_addUsedCar;
     Dialog dialog;
     RequestQueue requestQueue;
-
     ArrayList<UsedCar> usedCarArrayList;
     ArrayList<String> usedCarIdArrayList;
 
@@ -66,8 +64,7 @@ public class OldCarsFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_old_car, container, false);
         usedCarArrayList = new ArrayList<>();
